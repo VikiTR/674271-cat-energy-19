@@ -16,10 +16,10 @@
     <div class="main-menu__wrapper">
       <ul class="main-menu__list site-list site-list__item--active">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Каталог продукции</a>
+          <a>Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Подбор программы</a>
@@ -30,6 +30,8 @@
   </nav>
 </header>
 <main class="page-main-catalog">
+  <section class="catalog">
+  <div class="catalog__wrapper">
   <h1 class="catalog-title">Каталог продукции</h1>
   <ul class="catalog__list">
     <li class="catalog__item">
@@ -249,10 +251,59 @@
       </table>
       <button class="catalog__green-button" type="button">Заказать</button>
     </li>
+    <li class="catalog__item">
+      <img class="catalog__item-plus-mobile" src="img/plus-mobile.svg" width="30" height="30" alt="Плюс - показать еще товары">
+      <h3 class="catalog__item--title">Показать еще 100500 товаров</h3>
+      <p class="catalog__item-text">На самом деле вкусов гораздо больше!</p>
+      <button class="catalog__grey-button" type="button">Показать все</button>
+    </li>
   </ul>
+  </div>
+  </section>
+  <section class="extra">
+    <div class="extra__wrapper">
 
+    </div>
+  </section>
 
+  <section class="contacts">
+    <div class="contacts__wrapper">
+      <div class="contacts__text">
+        приглашаем к сотрудничеству дилеров!
+      </div>
+      <address class="contacts__address">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </address>
+      <img class="contacts__map" src="img/map.ipg" width="320" height="400" alt="Карта">
+      <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель">
+    </div>
+  </section>
 </main>
 
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__logotype">
+      <img class="page-footer__footer-logo" src="img/footer-logo.svg" width="128" height="24" alt="Логотип в футере">
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="button copyright__logo-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML-Academy"></a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
