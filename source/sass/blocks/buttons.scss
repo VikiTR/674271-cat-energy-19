@@ -1,0 +1,27 @@
+/* Кнопки */
+.button {
+  width: 280px;
+  height: 40;
+  display: block;
+  border: none;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.button__green {
+  background-color: #68b738;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button__green-catalog {
+  background-color: #68b738;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button__grey-button {
+  background-color: #f2f2f2;
+}

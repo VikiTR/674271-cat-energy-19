@@ -1,0 +1,23 @@
+/* Блок Функциональное питание для котов */
+.first-screen {
+  min-width: 320px;
+  background-color: #ffffff;
+  background: url("../img/index-background-mobile@1x") no-repeat;
+}
+
+.first-screen__functional {
+  color: #ffffff;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.first-screen__cat-can {
+  color: #ffffff;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

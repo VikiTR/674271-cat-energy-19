@@ -1,0 +1,44 @@
+/* Блок Категории */
+.categories {
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+.categories-list {
+  width: 320px;
+}
+
+.categories__item {
+  width: 280px;
+  min-height: 266px;
+  background-color: #f2f2f2;
+}
+
+.categories__title {
+  color: #111111;
+  font-family: "Oswald";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.categories__description {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.categories__catalog-slim {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.categories__right-arrow-long {
+  background-image: url("../img/icon-right-arrow-long.svg") no-repeat;
+}

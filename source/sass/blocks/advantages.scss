@@ -1,0 +1,47 @@
+/* Блок Преимущества */
+
+.advantages {
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+.advantages__title {
+  color: #111111;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.advantages__list {
+  width: 273px;
+}
+
+.advantages__item {
+  width: 256px;
+}
+
+.advantages__item--leaf {
+  background-image: url("../img/advantage-leaf@1x.png") no-repeat;
+}
+
+.advantages__item--powder {
+  background-image: url("../img/advantage-powder@1x.png") no-repeat;
+}
+
+.advantages__item--dining {
+  background-image: url("../img/advantage-dining@1x.png") no-repeat;
+}
+
+.advantages__item--result {
+  background-image: url("../img/advantage-clock@1x.png") no-repeat;
+}
+
+.advantages__description {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
