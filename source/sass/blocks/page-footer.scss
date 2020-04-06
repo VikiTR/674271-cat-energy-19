@@ -1,0 +1,43 @@
+/* Блок Футер */
+.page-footer {
+  min-width: 320px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logotype {
+  width: 128px;
+  height: 24px;
+  background: url("../img/logo-footer.svg") no-repeat;
+}
+
+.social__link--vkontakte {
+  width: 22px;
+  height: 12px;
+  background: url("../img/icon-vk.svg") no-repeat;
+}
+
+.social__link--instagram {
+  width: 16px;
+  height: 16px;
+  background: url("../img/icon-insta.svg") no-repeat;
+}
+
+.social__link--facebook {
+  width: 10px;
+  height: 19px;
+  background: url("../img/icon-fb.svg") no-repeat;
+}
+
+.copyright__link {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.copyright__logo-htmlacademy {
+  width: 27px;
+  height: 34px;
+  background: url("../img/htmlacademy.svg") no-repeat;
+}
