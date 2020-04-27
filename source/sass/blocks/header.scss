@@ -1,14 +1,22 @@
 /* Шапка */
+
 .page-header {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  background-color: $bg-white;
+}
+
+.page-header__wrapper {
+  padding-top: 11px;
 }
 
 .page-header__logo {
   width: 191px;
   height: 39px;
+}
+
+.page-header__logo-image--mobile {
+  padding-bottom: 13px;
+  padding-left: 20px;
 }
 
 .page-header__logo-image--tablet {
@@ -19,31 +27,4 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    width: 708px;
-    padding-top: 23px;
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-  }
-  .page-header__logo {
-    width: 174px;
-    height: 59px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__wrapper {
-    width: 1220px;
-    padding-top: 55px;
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-  }
-  .page-header__logo {
-    width: 203px;
-    height: 60px;
-  }
-
-}

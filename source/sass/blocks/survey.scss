@@ -1,0 +1,43 @@
+/*Подбор программы*/
+
+.survey {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.survey__text {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: left;
+  color: $black-two;
+  padding-bottom: 39px;
+}
+
+.survey__label {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $black-three;
+  padding-right: 16px;
+}
+
+.survey__input-text {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $input-act;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 14px;
+  border: 1px solid $input-bg;
+}

@@ -1,10 +1,10 @@
 /* Кнопки */
 .button {
   width: 280px;
-  height: 40;
+  height: 40px;
   display: block;
   border: none;
-  color: #ffffff;
+  color: $bg-white;
   font-family: "Oswald";
   font-weight: 400;
   text-transform: uppercase;
@@ -22,6 +22,31 @@
   line-height: 20px;
 }
 
+.button__green-catalog--extra {
+  background-color: $green-btn;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 17px;
+}
+
 .button__grey-button {
   background-color: $grey-btn;
+  color: $input-act;
+}
+
+.life-example__scale {
+  text-align: center;
+}
+
+.life-example__scale--before,
+.life-example__scale--after {
+  border: none;
+  background-color: $grey-btn;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $black-two;
 }

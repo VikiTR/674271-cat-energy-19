@@ -1,4 +1,14 @@
 /* Блок Копирайт */
+
+ .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 28px;
+
+ }
+
 .copyright__link {
   color: $input-act;
   font-family: "Arial";

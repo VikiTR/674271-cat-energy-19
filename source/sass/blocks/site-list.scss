@@ -1,8 +1,4 @@
 /*   Выпадающее меню */
-.site-list {
-  background-color: $bg-white;
-  min-width: 320px;
-}
 
 .site-list a {
   display: block;
@@ -23,33 +19,9 @@
 
 .site-list__item {
   height: 65px;
+  border-top: 1px solid $layer-1;
+  width: 100%;
+  padding-left: 31px;
 }
 
-@media (min-width: $tablet-width) {
-  .site-list {
-    width: 424px;
-    display: flex;
-    justify-content: space-between;
-  }
 
-  .site-list a {
-    padding-right: 0;
-  }
-
-  .site-list__item {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.39;
-    color: $black-three;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list {
-    width: 477px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.25;
-    color: $bg-white;
-  }
-}

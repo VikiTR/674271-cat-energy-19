@@ -1,9 +1,16 @@
 /* Блок Функциональное питание для котов */
+
 .first-screen {
-  position: relative;
-  min-width: 320px;
-  background-color: #ffffff;
-  background: url("../img/index-background-mobile@1x") no-repeat;
+  background-color: $bg-white;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  width: 320px;
+  height: auto;
+  text-align: center;
+}
+
+.first-screen__index-can-tablet,
+.first-screen__index-can-desktop {
+  display: none;
 }
 
 .first-screen__bg-mobile {
@@ -12,59 +19,22 @@
 }
 
 .first-screen__functional {
-  position: absolute;
-  top: 29px;
-  left: 38px;
-  color: #ffffff;
+  color: $bg-white;
   font-family: "Oswald";
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  padding-top: 29px;
+  padding-bottom: 19px;
 
 }
 
 .first-screen__cat-can {
-  position: absolute;
-  top: 122px;
-  left: 60px;
-  color: #ffffff;
+  color: $bg-white;
   font-family: "Oswald";
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
-}
-
-
-
-.first-screen__index-can-mobile {
-  position: absolute;
-  top: 167px;
-  left: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .first-screen__functional {
-    width: 420px;
-    padding-top: 61px;
-    padding-left: 91px;
-    padding-bottom: 33px;
-    color: $black-two;
-    font-family: "Oswald";
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 1;
-  }
-  .first-screen__cat-can {
-    color: $black-two;
-    font-family: "Oswald";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-}
-
-@media (min-width: $desktop-width) {
-
+  padding-bottom: 29px;
 }

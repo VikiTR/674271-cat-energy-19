@@ -1,4 +1,5 @@
 /* Блок Категории */
+
 .categories {
   display: flex;
   flex: wrap;
@@ -15,8 +16,11 @@
 }
 
 .categories__item {
-  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 260px;
   min-height: 266px;
+  padding-left: 20px;
   background-color: $grey-btn;
 }
 
@@ -27,7 +31,8 @@
   font-weight: 400;
   line-height: 37.02px;
   text-transform: uppercase;
-  padding-top: 39px;
+  color: $black-two;
+  padding-top: 30px;
   margin: 0;
 }
 
@@ -38,22 +43,80 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-top: 24px;
-  padding-left: 21px;
+  padding-top: 5px;
+}
+
+.categories__catalog {
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $layer-1;
+  padding-top: 20px;
 }
 
 .categories__catalog-slim {
+  padding-right: 10px;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  color: $black-two;
+}
+
+.categories__catalog-pro {
+  padding-right: 14px;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black-two;
 }
 
 .categories__item--cat {
   margin-bottom: 20px;
 }
 
-.categories__right-arrow-long {
-  background-image: url("../img/icon-right-arrow-long.svg") no-repeat;
+.categories__item--cat-image {
+  position: relative;
+  width: 50px;
+  height: 51px;
+  background-color: $green-btn;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 22px;
+  margin-right: 20px;
 }
+
+.categories__item--cat-image::after{
+  content: url("../img/icon-cat-slim.svg");
+  position: absolute;
+  top: 25%;
+  left: -9px;
+  width: 35px;
+  height: 49px;
+}
+
+
+.categories__item--puma-image {
+  position: relative;
+  width: 50px;
+  height: 51px;
+  background-color: $green-btn;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 22px;
+  margin-right: 20px;
+}
+
+.categories__item--puma-image::after{
+  content: url("../img/icon-cat-pro.svg");
+  position: absolute;
+  top: 25%;
+  left: -9px;
+  width: 67px;
+  height: 28px;
+}
+
+

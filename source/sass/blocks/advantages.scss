@@ -1,12 +1,12 @@
 /* Блок Преимущества */
 
 .advantages {
-  min-width: 320px;
-  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__title {
-  color: #111111;
+  color: $black-two;
   font-family: "Oswald";
   font-size: 36px;
   font-weight: 400;
@@ -14,31 +14,65 @@
 }
 
 .advantages__list {
+
+  padding: 0;
   width: 273px;
 }
 
 .advantages__item {
-  width: 256px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .advantages__item--leaf {
-  background-image: url("../img/advantage-leaf@1x.png") no-repeat;
+  width: 60px;
+  height: 60px;
+  background-color: $green-btn;
+  text-align: center;
+}
+
+.advantages__item--leaf-image {
+  padding-top: 7px;
 }
 
 .advantages__item--powder {
-  background-image: url("../img/advantage-powder@1x.png") no-repeat;
+  width: 60px;
+  height: 60px;
+  background-color: $green-btn;
+  text-align: center;
+}
+
+.advantages__item--powder-image {
+  padding-top: 7px;
 }
 
 .advantages__item--dining {
-  background-image: url("../img/advantage-dining@1x.png") no-repeat;
+  width: 60px;
+  height: 60px;
+  background-color: $green-btn;
+  text-align: center;
+}
+
+.advantages__item--dining-image {
+  padding-top: 7px;
 }
 
 .advantages__item--result {
-  background-image: url("../img/advantage-clock@1x.png") no-repeat;
+  width: 60px;
+  height: 60px;
+  background-color: $green-btn;
+  text-align: center;
+}
+
+.advantages__item--clock-image {
+  padding-top: 7px;
 }
 
 .advantages__description {
-  color: #444444;
+  width: 194px;
+  color: $input-act;
   font-family: "Arial";
   font-size: 14px;
   font-weight: 400;
