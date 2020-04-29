@@ -1,0 +1,18 @@
+/* Блок Копирайт */
+.copyright__link {
+  color: $input-act;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.copyright__logo-htmlacademy {
+  width: 27px;
+  height: 34px;
+  &:hover {
+    fill: $green-btn;
+  }
+
+
+}

@@ -1,34 +1,45 @@
 /* Блок Категории */
 .categories {
-  min-width: 320px;
-  background-color: #ffffff;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  background-color: $bg-white;
+  margin-top: 22px;
 }
 
-.categories-list {
-  width: 320px;
+.categories__list {
+  width: 280px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .categories__item {
   width: 280px;
   min-height: 266px;
-  background-color: #f2f2f2;
+  background-color: $grey-btn;
 }
 
 .categories__title {
-  color: #111111;
+  color: $black-two;
   font-family: "Oswald";
   font-size: 24px;
   font-weight: 400;
   line-height: 37.02px;
   text-transform: uppercase;
+  padding-top: 39px;
+  margin: 0;
 }
 
 .categories__description {
-  color: #444444;
+  width: 233px;
+  color: $input-act;
   font-family: "Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  padding-top: 24px;
+  padding-left: 21px;
 }
 
 .categories__catalog-slim {
@@ -37,6 +48,10 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.categories__item--cat {
+  margin-bottom: 20px;
 }
 
 .categories__right-arrow-long {

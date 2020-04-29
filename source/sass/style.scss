@@ -1,8 +1,11 @@
 @import "fonts.scss";
+@import "global/variables.scss";
 @import "global/global.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/header.scss";
+@import "blocks/container.scss";
 @import "blocks/main-menu.scss";
+@import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/first-screen.scss";
 @import "blocks/buttons.scss";
@@ -10,3 +13,5 @@
 @import "blocks/advantages.scss";
 @import "blocks/life-example.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";

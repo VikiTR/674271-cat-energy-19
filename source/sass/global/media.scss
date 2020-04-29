@@ -1,0 +1,54 @@
+/* Медиа запросы */
+@media screen and (min-width: $tablet-width) {
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+  .page-header__logo-image--tablet {
+    display: block;
+  }
+  .page-header__wrapper {
+    width: 708px;
+    padding-top: 23px;
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+  }
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+  .page-header__logo-image--tablet {
+    display: none;
+  }
+  .page-header__logo-image--desktop {
+    display: block;
+  }
+  .page-header__wrapper {
+    width: 1220px;
+    padding-top: 55px;
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
+  }
+  .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  }
