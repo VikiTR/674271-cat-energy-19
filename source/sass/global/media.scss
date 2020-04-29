@@ -1,4 +1,35 @@
 /* Медиа запросы */
+@media (max-width: $mobile-width-only) {
+  .main-menu--closed .site-list__item {
+    display: none;
+  }
+
+  .main-menu--opened .main-menu__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    min-height: 20vh;
+    background-color: $bg-white;
+  }
+
+  .main-menu--nojs .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu--nojs .main-menu__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-menu--nojs .site-list__item {
+    display: block;
+  }
+
+
+
+}
+
 @media screen and (min-width: $tablet-width) {
   .page-header__logo-image--mobile {
     display: none;
