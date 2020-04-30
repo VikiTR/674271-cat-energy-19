@@ -1,8 +1,6 @@
 /* Кнопки */
 .button {
-  width: 280px;
-  height: 40px;
-  display: block;
+  display: inline-block;
   border: none;
   color: $bg-white;
   font-family: "Oswald";
@@ -34,19 +32,33 @@
   color: $input-act;
 }
 
-.life-example__scale {
-  text-align: center;
+@media screen and (min-width: $tablet-width) {
+
+  .button__green {
+    position: absolute;
+    top: 33%;
+    left: 12.5%;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-left: 26px;
+    padding-right: 29px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button__green-catalog--extra {
+    width: 100%;
+  }
 }
 
-.life-example__scale--before,
-.life-example__scale--after {
-  border: none;
-  background-color: $grey-btn;
-  font-family: Oswald;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: right;
-  text-transform: uppercase;
-  color: $black-two;
+@media screen and (min-width: $desktop-width) {
+
+  .button__green {
+    top: 56%;
+    left: 6.5%;
+  }
+
+  .button__green-catalog--extra {
+    width: 245px;
+  }
 }

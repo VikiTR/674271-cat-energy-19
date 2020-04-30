@@ -26,7 +26,6 @@
   line-height: 36px;
   padding-top: 29px;
   padding-bottom: 19px;
-
 }
 
 .first-screen__cat-can {
@@ -37,4 +36,83 @@
   line-height: 14px;
   text-transform: uppercase;
   padding-bottom: 29px;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .first-screen {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: $bg-white;
+    background: $bg-white;
+    text-align: left;
+  }
+
+  .first-screen__index-can-tablet {
+    width: 708px;
+    height: 609px;
+  }
+
+  .first-screen__text {
+    padding-left: 88px;
+  }
+
+  .first-screen__functional {
+    width: 420px;
+    padding-top: 56px;
+    padding-bottom: 41px;
+    color: $black-two;
+    font-family: "Oswald";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .first-screen__cat-can {
+    padding-bottom: 20px;
+    color: $black-two;
+    font-family: "Oswald";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .first-screen {
+    position: relative;
+    display: flex;
+    height: 582px;
+  }
+
+  .first-screen__text {
+    padding: 0;
+  }
+
+  .first-screen__functional {
+    padding-top: 104px;
+    padding-left: 81px;
+    padding-bottom: 41px;
+  }
+
+  .first-screen__cat-can {
+    padding-left: 81px;
+  }
+
+  .first-screen__image {
+    position: absolute;
+    left: 469px;
+    z-index: 3;
+  }
+
+  .first-screen__green-bg {
+    position: absolute;
+    top: -114px;
+    right: -110px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    width: 720px;
+    height: 696px;
+  }
 }

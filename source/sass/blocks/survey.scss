@@ -41,3 +41,25 @@
   margin-bottom: 14px;
   border: 1px solid $input-bg;
 }
+
+@media screen and (min-width: $tablet-width) {
+
+  .survey__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .survey__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .survey__input-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  
+}

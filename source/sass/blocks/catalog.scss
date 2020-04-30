@@ -91,3 +91,133 @@
   text-align: center;
   color: $input-act;
 }
+
+@media screen and (min-width: $tablet-width) {
+
+  .catalog__title {
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 51px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 324px;
+    padding-top: 82px;
+    padding-bottom: 58px;
+  }
+
+  .catalog__item--all {
+    display: flex;
+    justify-content: center;
+    height: 431px;
+    background-color: $grey-btn;
+  }
+
+  .catalog__item--chicken-small-mobile,
+  .catalog__item--chicken-big-mobile,
+  .catalog__item--fish-small-mobile,
+  .catalog__item--fish-big-mobile,
+  .catalog__item--buckwheat-small-mobile,
+  .catalog__item--buckwheat-big-mobile,
+  .catalog__item--rice-small-mobile,
+  .catalog__item--plus-mobile,
+  .first-screen__index-can-mobile {
+    display: none;
+  }
+
+  .catalog__item--chicken-small-tablet,
+  .catalog__item--chicken-big-tablet,
+  .catalog__item--fish-small-tablet,
+  .catalog__item--fish-big-tablet,
+  .catalog__item--buckwheat-small-tablet,
+  .catalog__item--buckwheat-big-tablet,
+  .catalog__item--rice-small-tablet,
+  .catalog__item--plus-tablet,
+  .first-screen__index-can-tablet {
+    display: block;
+  }
+
+  .catalog__item--chicken-small-desktop,
+  .catalog__item--chicken-big-desktop,
+  .catalog__item--fish-small-desktop,
+  .catalog__item--fish-big-desktop,
+  .catalog__item--buckwheat-small-desktop,
+  .catalog__item--buckwheat-big-desktop,
+  .catalog__item--rice-small-desktop,
+  .first-screen__index-can-desktop {
+    display: none;
+  }
+
+  .catalog__item--title {
+    width: 124px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .catalog__item--plus {
+    height: 431px;
+    border: 1px solid $input-bg;
+  }
+
+  .catalog__item--plus-image {
+    width: 220px;
+  }
+
+  .catalog__item--plus-tablet {
+    padding-top: 55px;
+    padding-left: 85px;
+  }
+
+  .catalog__item--plus-title {
+    width: 134px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-right: 22px;
+  }
+
+  .catalog__item--plus-text {
+    width: 167px;
+    font-size: 16px;
+    line-height: auto;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .catalog__item {
+    width: 245px;
+  }
+
+  .catalog__item--chicken-small-tablet,
+  .catalog__item--chicken-big-tablet,
+  .catalog__item--fish-small-tablet,
+  .catalog__item--fish-big-tablet,
+  .catalog__item--buckwheat-small-tablet,
+  .catalog__item--buckwheat-big-tablet,
+  .catalog__item--rice-small-tablet,
+  .first-screen__index-can-tablet {
+    display: none;
+  }
+
+  .catalog__item--chicken-small-desktop,
+  .catalog__item--chicken-big-desktop,
+  .catalog__item--fish-small-desktop,
+  .catalog__item--fish-big-desktop,
+  .catalog__item--buckwheat-small-desktop,
+  .catalog__item--buckwheat-big-desktop,
+  .catalog__item--rice-small-desktop,
+  .first-screen__index-can-desktop {
+    display: block;
+  }
+}

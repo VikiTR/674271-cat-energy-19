@@ -78,3 +78,41 @@
   color: $black-two;
   text-transform: uppercase;
 }
+
+.life-example__scale {
+  text-align: center;
+}
+
+.life-example__scale--before,
+.life-example__scale--after {
+  border: none;
+  background-color: $grey-btn;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $black-two;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .life-example {
+    padding: 0;
+  }
+
+  .life-example__title {
+    font-size: 60px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: left;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  
+}

@@ -24,5 +24,16 @@
     fill: $green-btn;
   }
 
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .copyright__logo-htmlacademy {
+    padding-left: 23px;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
 
 }

@@ -58,3 +58,16 @@
 .answer-list__item input:checked + label::after {
   opacity: 1;
 }
+
+@media screen and (min-width: $tablet-width) {
+
+  .answer-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+
+}

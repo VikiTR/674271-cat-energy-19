@@ -29,3 +29,38 @@
     height: 24px;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+
+  .page-footer {
+    max-width: 768px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .page-footer {
+    max-width: 1440px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-footer__logotype {
+    padding-left: 110px;
+  }
+
+  .page-footer__copyright {
+    padding-right: 110px;
+  }
+
+  }
+

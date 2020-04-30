@@ -23,3 +23,19 @@
   color: $black-two;
 }
 
+@media screen and (min-width: $tablet-width) {
+
+  .page-form__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-contact__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+}
