@@ -1,0 +1,47 @@
+/*Дополнительно*/
+
+.more__list {
+  list-style: none;
+  padding: 0;
+}
+
+.more__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.more__checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.more__checkbox+label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $input-bg;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.more__checkbox:checked+label::before {
+  content: "";
+  
+}

@@ -109,6 +109,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid $layer-1;
+    border-collapse: collapse;
   }
 
   .extra__item--title {

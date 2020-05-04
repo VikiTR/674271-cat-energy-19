@@ -28,8 +28,16 @@
 
 @media screen and (min-width: $tablet-width) {
 
+  .copyright {
+    padding-top: 58px;
+  }
+
   .copyright__logo-htmlacademy {
     padding-left: 23px;
+  }
+
+  .copyright__link {
+    padding-top: 9px;
   }
 
 }

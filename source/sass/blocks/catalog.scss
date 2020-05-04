@@ -158,10 +158,41 @@
   }
 
   .catalog__item--title {
-    width: 124px;
+    width: 126px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
+  }
+
+
+  .catalog__item--table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .catalog__field {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: $input-act;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .catalog__value {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+    color: $input-act;
+  }
+
+  .catalog__table {
+    width: 249px;
   }
 
   .catalog__item--plus {

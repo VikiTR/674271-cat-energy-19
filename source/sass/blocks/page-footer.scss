@@ -43,6 +43,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .page-footer__logotype {
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {

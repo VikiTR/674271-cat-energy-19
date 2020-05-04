@@ -29,6 +29,10 @@
 
 @media screen and (min-width: $tablet-width) {
 
+  .social__list {
+    padding-top: 60px;
+  }
+
   .social__link--vkontakte {
     width: 30px;
     height: 16px;

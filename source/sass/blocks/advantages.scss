@@ -179,6 +179,10 @@
 
 @media screen and (min-width: $desktop-width) {
 
+  .advantages {
+    margin-bottom: 37px;
+  }
+
   .advantages__list {
     width: 1220px;
     justify-content: space-between;
@@ -187,7 +191,6 @@
   .advantages__item {
     position: relative;
     width: 245px;
-    height: 230px;
     padding: 0;
     margin-bottom: 90px;
     font-size: 16px;
@@ -199,4 +202,6 @@
     }
 
   }
+
+
 }
