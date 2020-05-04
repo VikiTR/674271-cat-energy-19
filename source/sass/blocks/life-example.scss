@@ -1,5 +1,350 @@
 /* Блок Живой пример */
 .life-example {
-  min-width: 320px;
-  background-color: #f2f2f2;
+  background-color: $grey-btn;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.life-example__title {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: $black-two;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  margin: 0;
+}
+
+.life-example__description {
+  width: 266px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $input-act;
+  padding-bottom: 27px;
+}
+
+.life-example__quantities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.life-example__quantity {
+  position: relative;
+  border: 1px solid $input-bg;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+}
+
+.life-example__number {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $black-two;
+  text-transform: uppercase;
+  padding-top: 17px;
+}
+
+.life-example__text {
+  position: absolute;
+  left: 32px;
+  top: 50px;
+  background-color: $grey-btn;
+  width: 54px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: $input-act;
+}
+
+.life-example__expenses {
+  padding-top: 38px;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $black-two;
+  text-transform: uppercase;
+}
+
+.life-example__scale {
+  text-align: center;
+}
+
+.life-example__scale--before,
+.life-example__scale--after {
+  border: none;
+  border-bottom: dashed 1px $border-bottom;
+  padding: 0;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $black-two;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: solid 1px $border-bottom;
+  }
+
+  &:focus {
+    border-bottom: solid 1px $grey-btn;
+  }
+
+}
+
+.life-example__index-can-tablet {
+  display: none;
+}
+
+.life-example__index-can-desktop {
+  display: none;
+}
+
+
+
+@media screen and (min-width: $tablet-width) {
+
+  .life-example {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 768px;
+  }
+
+  .life-example__title {
+    font-size: 60px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: $bg-white;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-bottom: 75px;
+  }
+
+  .life-example__wrapper {
+    background-color: $bg-white;
+    padding-left: 30px;
+    padding-bottom: 255px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .life-example__description {
+    width: 674px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 69px;
+    padding-top: 71px;
+  }
+
+  .life-example__quantities {
+    width: 366px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .life-example__quantity {
+    width: 161px;
+    height: 71px;
+  }
+
+  .life-example__number {
+    font-size: 30px;
+    line-height: 37.02px;
+    padding-top: 15px;
+  }
+
+  .life-example__text {
+    left: 10px;
+    top: 63px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-white;
+  }
+
+  .life-example__price {
+  padding-right: 30px;
+  }
+
+  .life-example__expenses {
+    padding-top: 0;
+    padding-bottom: 11px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .life-example__sale {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $black-two;
+  }
+
+  .life-example__slider {
+    background-color: $grey-btn;
+    width: 100%;
+    height: 310px;
+  }
+
+  .life-example__scale {
+    position: relative;
+  }
+
+  .life-example__bar {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: $toggle;
+  }
+
+  .life-example__toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    box-shadow: 0px 2px 5px 0 #00000026;
+    background-color: $bg-white;
+    border: 13px solid $bg-white;
+    background-color: $green-btn;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .life-example__index-can-mobile {
+    display: none;
+  }
+
+  .life-example__index-can-desktop {
+    display: none;
+  }
+
+  .life-example__index-can-tablet {
+    display: block;
+    position: absolute;
+    top: 461px;
+    left: 8%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .life-example {
+    position: relative;
+    background-color: $bg-white;
+  }
+
+  .life-exaple__superwrapper {
+    display: flex;
+    background-color: $grey-btn;
+  }
+
+  .life-example__wrapper {
+    background-color: $grey-btn;
+    padding-left: 110px;
+    padding-bottom: 73px;
+  }
+
+  .life-example__title {
+    padding-left: 110px;
+  }
+
+  .life-example__description {
+    width: 431px;
+    padding-bottom: 69px;
+    padding-top: 71px;
+  }
+
+  .life-example__quantities {
+    width: 368px;
+    padding-bottom: 60px;
+  }
+
+  .life-example__expenses {
+    padding-top: 0;
+    padding-right: 64px;
+    text-align: left;
+  }
+
+  .life-example__text {
+    background-color: $grey-btn;
+  }
+
+  .life-example__price {
+    display: flex;
+  }
+
+  .life-example__slider {
+    background-color: $grey-btn;
+    width: 100%;
+  }
+
+  .life-example__scale {
+    position: relative;
+  }
+
+  .life-example__bar {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: $toggle;
+  }
+
+  .life-example__toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    box-shadow: 0px 2px 5px 0 #00000026;
+    background-color: $bg-white;
+    border: 13px solid $bg-white;
+    background-color: $green-btn;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .life-example__index-can-mobile {
+    display: none;
+  }
+
+  .life-example__index-can-tablet {
+    display: none;
+  }
+
+  .life-example__index-can-desktop {
+    display: block;
+    position: absolute;
+    width: 636px;
+    height: 517px;
+    top: -54px;
+    left: 694px;
+  }
+
+
 }

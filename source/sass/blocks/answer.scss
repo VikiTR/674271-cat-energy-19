@@ -1,0 +1,73 @@
+/*Ответ*/
+
+.answer__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid $border-clr;
+}
+
+.answer-text {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $black-three;
+}
+
+.answer-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.answer-list__item {
+  padding-bottom: 26px;
+}
+
+.answer-list__item label {
+  position: relative;
+  padding-left: 42px;
+}
+
+.answer-list__item input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - (28px / 2));
+  width: 30px;
+  height: 30px;
+  border: 1px solid $input-bg;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.answer-list__item input + label::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: calc(50% - (9px / 2));
+  width: 12px;
+  height: 12px;
+  border: 1px solid $green-btn;
+  background-color: $green-btn;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.answer-list__item input:checked + label::after {
+  opacity: 1;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .answer-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+
+}

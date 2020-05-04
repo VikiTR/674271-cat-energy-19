@@ -1,4 +1,14 @@
 /* Блок Копирайт */
+
+ .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 28px;
+
+ }
+
 .copyright__link {
   color: $input-act;
   font-family: "Arial";
@@ -14,5 +24,24 @@
     fill: $green-btn;
   }
 
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .copyright {
+    padding-top: 58px;
+  }
+
+  .copyright__logo-htmlacademy {
+    padding-left: 23px;
+  }
+
+  .copyright__link {
+    padding-top: 9px;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
 
 }

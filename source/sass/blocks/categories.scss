@@ -1,4 +1,5 @@
 /* Блок Категории */
+
 .categories {
   display: flex;
   flex: wrap;
@@ -15,8 +16,11 @@
 }
 
 .categories__item {
-  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 260px;
   min-height: 266px;
+  padding-left: 20px;
   background-color: $grey-btn;
 }
 
@@ -27,33 +31,299 @@
   font-weight: 400;
   line-height: 37.02px;
   text-transform: uppercase;
-  padding-top: 39px;
+  color: $black-two;
+  padding-top: 30px;
   margin: 0;
 }
 
-.categories__description {
+.categories__description--slim,
+.categories__description--pro {
   width: 233px;
   color: $input-act;
   font-family: "Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-top: 24px;
-  padding-left: 21px;
+  padding-top: 5px;
+}
+
+.categories__catalog {
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $layer-1;
+  padding-top: 20px;
 }
 
 .categories__catalog-slim {
+  padding-right: 10px;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  color: $black-two;
+}
+
+.categories__catalog-pro {
+  padding-right: 14px;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black-two;
 }
 
 .categories__item--cat {
   margin-bottom: 20px;
 }
 
-.categories__right-arrow-long {
-  background-image: url("../img/icon-right-arrow-long.svg") no-repeat;
+.categories__item--cat-image {
+  position: relative;
+  width: 50px;
+  height: 51px;
+  background-color: $green-btn;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 22px;
+  margin-right: 20px;
 }
+
+.categories__item--cat-image::after{
+  content: url("../img/icon-cat-slim.svg");
+  position: absolute;
+  top: 25%;
+  left: -9px;
+  width: 35px;
+  height: 49px;
+}
+
+
+.categories__item--puma-image {
+  position: relative;
+  width: 50px;
+  height: 51px;
+  background-color: $green-btn;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 22px;
+  margin-right: 20px;
+}
+
+.categories__item--puma-image::after{
+  content: url("../img/icon-cat-pro.svg");
+  position: absolute;
+  top: 25%;
+  left: -9px;
+  width: 67px;
+  height: 28px;
+}
+
+ .categories__right-arrow-long {
+   width: 25px;
+   height: 12px;
+
+   &:hover {
+     width: 34px;
+   }
+
+   &:focus {
+     fill-opacity: 0.3;
+   }
+ }
+
+@media screen and (min-width: $tablet-width) {
+
+  .categories {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    background-color: $bg-white;
+    margin: 0;
+  }
+
+  .categories__list {
+    width: 708px;
+  }
+
+  .categories__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-left: 0;
+    background-color: $grey-btn;
+  }
+
+  .categories__item--cat {
+    margin-bottom: 29px;
+  }
+
+ .categories__item--cat-image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 92px;
+    margin-left: 23px;
+    margin-right: 62px;
+  }
+
+  .categories__item--cat-image::after{
+    content: url("../img/icon-cat-slim.svg");
+    position: absolute;
+    top: -13px;
+    left: 29px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .categories__item--puma-image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 91px;
+    margin-left: 25px;
+    margin-right: 60px;
+  }
+
+  .categories__item--puma-image::after{
+    content: url("../img/icon-cat-pro.svg");
+    position: absolute;
+    top: 22%;
+    left: -36px;
+    width: 268px;
+    height: 113px;
+  }
+
+  .categories__example {
+    width: 371px;
+  }
+
+  .categories__title {
+    font-size: 36px;
+    text-align: left;
+    color: $black-two;
+    padding-top: 76px;
+    padding-bottom: 21px;
+  }
+
+  .categories__description--slim {
+    width: 372px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .categories__description--pro {
+    width: 344px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .categories__catalog {
+    width: 240px;
+    border: none;
+    padding-top: 57px;
+    padding-bottom: 62px;
+  }
+
+  .categories__catalog-slim {
+    padding-right: 24px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .categories__catalog-pro {
+    padding-right: 23px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .categories {
+    margin-top: 81px;
+    margin-bottom: 28px;
+  }
+
+  .categories__list {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 570px;
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  .categories__item--cat {
+    margin-bottom: 0;
+  }
+
+  .categories__item--cat-image {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 47px;
+    margin-right: 20px;
+    margin-left: 53px;
+  }
+
+  .categories__item--cat-image::after {
+    content: url("../img/icon-cat-slim.svg");
+    top: -7%;
+    left: 13px;
+    width: 71px;
+    height: 97px;
+  }
+
+  .categories__item--puma-image {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 47px;
+    margin-right: 20px;
+    margin-left: 53px;
+  }
+
+  .categories__item--puma-image::after {
+    content: url("../img/icon-cat-pro.svg");
+    position: absolute;
+    top: 22%;
+    left: -18px;
+    width: 134px;
+    height: 57px;
+  }
+
+  .categories__item {
+    max-width: 570px;
+  }
+
+  .categories__title {
+    padding-left: 41px;
+  }
+
+  .categories__description--slim,
+  .categories__description--pro {
+    width: 462px;
+    padding-top: 54px;
+    margin-left: -121px;
+  }
+
+  .categories__catalog {
+    padding-top: 32px;
+    padding-bottom: 62px;
+  }
+
+  .categories__catalog-slim,
+  .categories__catalog-pro {
+    margin-left: -120px;
+  }
+}
+
+

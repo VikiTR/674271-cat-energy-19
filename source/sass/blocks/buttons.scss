@@ -1,10 +1,8 @@
 /* Кнопки */
 .button {
-  width: 280px;
-  height: 40;
-  display: block;
+  display: inline-block;
   border: none;
-  color: #ffffff;
+  color: $bg-white;
   font-family: "Oswald";
   font-weight: 400;
   text-transform: uppercase;
@@ -14,14 +12,83 @@
   background-color: $green-btn;
   font-size: 14px;
   line-height: 18px;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:focus {
+    background-color: $green-hover;
+    color: $color-btn;
+  }
 }
 
 .button__green-catalog {
   background-color: $green-btn;
   font-size: 16px;
   line-height: 20px;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:focus {
+    background-color: $green-hover;
+    color: $color-btn;
+  }
+}
+
+.button__green-catalog--extra {
+  background-color: $green-btn;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 17px;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:focus {
+    background-color: $green-hover;
+    color: $color-btn;
+  }
 }
 
 .button__grey-button {
   background-color: $grey-btn;
+  color: $input-act;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .button__green {
+    position: absolute;
+    top: 33%;
+    left: 12.5%;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-left: 26px;
+    padding-right: 29px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button__green-catalog--extra {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .button__green {
+    top: 59%;
+    left: 6.5%;
+  }
+
+  .button__green-catalog--extra {
+    width: 245px;
+  }
 }
