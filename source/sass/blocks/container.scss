@@ -1,14 +1,13 @@
 /*   Выпадающее меню */
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: $tablet-width) {
 
   .container {
     max-width: 708px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -18,8 +17,6 @@
 
   .container {
     max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 55px;
     padding-right: 55px;
   }

@@ -22,11 +22,15 @@
 .extra__list {
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .extra__item {
   border-top: 1px solid $layer-1;
-  border-bottom: 1px solid $layer-1;
+
+  &:last-child {
+    border-bottom: 1px solid $layer-1;
+  }
 }
 
 .extra__item--title {
@@ -162,12 +166,19 @@
     justify-content: space-between;
   }
 
-  .extra__item {
+  .extra__list {
     width: 895px;
+  }
+
+  .extra__item {
     padding: 0;
     border: none;
     border-top: 1px solid $layer-1;
-    border-bottom: 1px solid $layer-1;
+
+
+    &:last-child {
+      border-bottom: 1px solid $layer-1;
+    }
   }
 
   .extra__item--title {
