@@ -103,42 +103,61 @@
     line-height: 60px;
     text-align: left;
     padding-left: 0;
-    padding-top: 51px;
+    padding-top: 56px;
   }
 
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
   }
 
   .catalog__item {
     width: 324px;
-    padding-top: 82px;
-    padding-bottom: 58px;
+    padding-top: 137px;
+    padding-bottom: 3px;
     border: 0;
   }
 
   .catalog__item--all {
+    position: relative;
     display: flex;
     justify-content: center;
-    height: 431px;
+    height: 267px;
     background-color: $grey-btn;
-    padding: 0 39px;
+    padding: 164px 0 0;
   }
 
   .catalog__item--title {
-    width: 126px;
+    width: 130px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
+    margin: 0;
   }
 
+  .catalog__item--image {
+    position: absolute;
+    top: -46px;
+    left: 0px;
+  }
+
+  .catalog__item--image-big {
+    top: -82px;
+    left: 0px;
+  }
 
   .catalog__item--table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 159px;
+  width: 253px;
+  }
+
+  .catalog__table-border {
+    border-bottom: 1px solid $input-bg;
   }
 
   .catalog__field {
@@ -148,8 +167,10 @@
     line-height: 16px;
     text-align: left;
     color: $input-act;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 0;
+    padding-right: 11px;
   }
 
   .catalog__value {
@@ -163,6 +184,7 @@
 
   .catalog__table {
     width: 100%;
+    margin-top: 17px;
   }
 
   .catalog__item--plus {
@@ -170,29 +192,52 @@
     border: 1px solid $input-bg;
   }
 
+  .catalog__item--plus-all {
+    width: 324px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .catalog__item--plus-image {
-    width: 220px;
+    width: 60px;
+    height: 60px;
+    padding-top: 55px;
   }
 
   .catalog__item--plus-title {
-    width: 134px;
+    width: 156px;
     font-size: 20px;
     line-height: 20px;
     margin: 0;
-    margin-right: 22px;
   }
 
   .catalog__item--plus-text {
     width: 167px;
     font-size: 16px;
     line-height: auto;
+    margin-top: 29px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
 
+  .catalog__title {
+    padding-top: 40px;
+  }
+
   .catalog__item {
     width: 245px;
+    padding-bottom: 7px;
+  }
+
+  .catalog__item--all {
+    padding-top: 163px;
+  }
+
+  .catalog__item--table {
+    width: 169px;
   }
 
 }

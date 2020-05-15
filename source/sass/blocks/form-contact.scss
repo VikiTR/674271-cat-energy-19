@@ -6,17 +6,43 @@
 }
 
 .form-contact__title {
+  position: relative;
   font-family: Oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   color: $black-two;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 130px;
+    height: 3px;
+    width: 100%;
+    background-color: $green-btn;
+    z-index: -1;
+  }
+
 }
 
 .form-contact__list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+}
+
+.form-contact__item {
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    padding-bottom: 12px;
+  }
 }
 
 .form-contact__label {
@@ -27,9 +53,11 @@
   text-align: left;
   text-transform: uppercase;
   color: $black-three;
+  padding-right: 10px;
 }
 
 .form-contact__input-text {
+  width: 100%;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
@@ -38,9 +66,8 @@
   text-transform: uppercase;
   color: $input-act;
   padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   border: 1px solid $input-bg;
 }
 
@@ -50,9 +77,66 @@
   .form-contact__title {
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 110px;
+      height: 3px;
+      width: 119px;
+      background-color: $green-btn;
+
+    }
   }
+
+  .form-contact__label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: $black-three;
+  }
+
+  .form-contact__input-text {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
 }
 
 @media screen and (min-width: $desktop-width) {
+
+  .form-contact{
+    padding: 0;
+  }
+
+  .form-contact__title {
+    padding-bottom: 69px;
+
+    &::before {
+      top: 47px;
+      left: -109px;
+      height: 3px;
+      width: 70px;
+    }
+
+    &::after {
+      top: 47px;
+      left: 553px;
+      height: 3px;
+      width: 778px;
+    }
+  }
+
+  .form-contact__list {
+    display: flex;
+    padding-bottom: 29px;
+  }
+
+  .form-contact__item {
+    width: 50%;
+  }
 
 }

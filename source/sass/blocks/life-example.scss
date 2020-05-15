@@ -206,9 +206,9 @@
   }
 
   .life-example__slider {
-    background-color: $grey-btn;
     width: 100%;
     height: 310px;
+    background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
   }
 
   .life-example__scale {

@@ -16,7 +16,7 @@
 
 .page-header__logo-image--mobile {
   padding-bottom: 13px;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 
@@ -33,6 +33,10 @@
     width: 174px;
     height: 59px;
   }
+
+  .page-header__logo-image--mobile {
+    padding-left: 0;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -40,10 +44,11 @@
   .page-header {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 34px;
   }
 
   .page-header__wrapper {
-    padding-top: 53px;
+    padding-top: 55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

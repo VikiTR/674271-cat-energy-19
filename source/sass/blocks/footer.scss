@@ -1,23 +1,23 @@
 /* Блок Футер */
-.page-footer {
+.footer {
   background-color: $grey-btn;
   padding: 0 20px;
 }
 
-.page-footer__wrapper {
+.footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.page-footer__social {
+.footer__social {
   display: flex;
   justify-content: center;
   padding: 0;
   border-bottom: 1px solid $layer-1;
 }
 
-.page-footer__logotype {
+.footer__logotype {
   display: flex;
   justify-content: center;
   padding-top: 39px;
@@ -32,39 +32,55 @@
 
 @media screen and (min-width: $tablet-width) {
 
-  .page-footer {
+  .footer {
     max-width: 768px;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .page-footer__wrapper {
+  .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    padding: 52px 30px 60px;
   }
 
-  .page-footer__logotype {
-    padding-top: 64px;
-    padding-bottom: 62px;
+  .footer__logotype {
+    width: 33%;
+    padding: 0;
+    border: none;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .footer__social {
+    width: 33%;
+    padding: 0;
+    border: none;
+    align-items: center;
+  }
+
+  .footer__copyright {
+    width: 33%;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
 
-  .page-footer {
+  .footer {
     max-width: 1440px;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .page-footer__logotype {
-    padding-left: 110px;
+  .footer__logotype {
+
   }
 
-  .page-footer__copyright {
-    padding-right: 110px;
+  .footer__copyright {
+
   }
 
   }

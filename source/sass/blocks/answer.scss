@@ -3,6 +3,7 @@
 .answer__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 26px;
   border: 1px solid $border-clr;
 }
 
@@ -19,22 +20,23 @@
 .answer-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .answer-list__item {
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 
 .answer-list__item label {
   position: relative;
-  padding-left: 42px;
+  padding-left: 45px;
 }
 
 .answer-list__item input + label::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: calc(50% - (28px / 2));
+  left: -2px;
+  top: calc(50% - (32px / 2));
   width: 30px;
   height: 30px;
   border: 1px solid $input-bg;
@@ -45,8 +47,8 @@
 .answer-list__item input + label::after {
   content: "";
   position: absolute;
-  left: 9px;
-  top: calc(50% - (9px / 2));
+  left: 7px;
+  top: calc(50% - (14px / 2));
   width: 12px;
   height: 12px;
   border: 1px solid $green-btn;
@@ -61,13 +63,40 @@
 
 @media screen and (min-width: $tablet-width) {
 
+  .answer__wrapper {
+    padding-left: 35px;
+    padding-top: 34px;
+  }
+
   .answer-text {
     font-size: 20px;
     line-height: 20px;
   }
 
+  .answer-list__item input + label::before {
+    left: -8px;
+    top: calc(50% - (41px / 2));
+    width: 40px;
+    height: 40px;
+  }
+
+  .answer-list__item input + label::after {
+    left: 3px;
+    top: calc(50% - (18px / 2));
+    width: 18px;
+    height: 18px;
+  }
+
+  .answer-list__item {
+    padding-bottom: 31px;
+}
+
 }
 
 @media screen and (min-width: $desktop-width) {
+
+  .answer-list__item label {
+    padding-left: 52px;
+  }
 
 }

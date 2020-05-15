@@ -13,7 +13,7 @@
   text-transform: uppercase;
   text-align: left;
   color: $black-two;
-  padding-bottom: 39px;
+  padding-bottom: 18px;
   padding-left: 20px;
 }
 
@@ -21,6 +21,20 @@
   list-style: none;
   padding: 0;
   padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.survey__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+  padding-top: 1px;
+}
+
+
+.survey__item:nth-child(3) {
+  padding-bottom: 0;
 }
 
 .survey__label {
@@ -35,6 +49,7 @@
 }
 
 .survey__input-text {
+  width: 100%;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
@@ -42,18 +57,33 @@
   text-align: left;
   text-transform: uppercase;
   color: $input-act;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 14px;
+  padding-left: 13px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   border: 1px solid $input-bg;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: $tablet-width) {
 
+  .survey {
+    padding: 0;
+  }
+
+  .survey__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .survey__item {
+    padding-top: 5px;
+  }
+
   .survey__text {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 0;
+    padding-bottom: 61px;
   }
 
   .survey__label {
@@ -64,9 +94,20 @@
   .survey__input-text {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 20px;
+    padding-top: 11px;
+    padding-left: 23px;
+    padding-bottom: 11px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
 
+  .survey__text {
+    padding-bottom: 58px;
+  }
+
+  .survey {
+    padding-right: 80px;
+  }
 }
