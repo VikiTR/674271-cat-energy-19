@@ -12,6 +12,7 @@
 .page-header__logo {
   width: 191px;
   height: 39px;
+  padding-left: 20px;
 }
 
 .page-header__logo-image--mobile {
@@ -23,6 +24,13 @@
 
 @media screen and (min-width: $tablet-width) {
 
+  .page-header {
+    max-width: 708px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .page-header__wrapper {
     padding-top: 24px;
     display: flex;
@@ -32,6 +40,7 @@
   .page-header__logo {
     width: 174px;
     height: 59px;
+    padding-left: 0;
   }
 
   .page-header__logo-image--mobile {
@@ -42,9 +51,11 @@
 @media screen and (min-width: $desktop-width) {
 
   .page-header {
-    width: 100%;
+    max-width: 1220px;
     margin: 0 auto;
     padding-bottom: 34px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .page-header__wrapper {

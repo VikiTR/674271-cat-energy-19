@@ -1,0 +1,60 @@
+/*Коты*/
+
+.slider {
+  position: relative;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .slider__box {
+    position: absolute;
+    top: -170px;
+    left: 66px;
+    margin: 0 auto;
+    width: 636px;
+    display: flex;
+  }
+
+  .slider__item {
+    width: 50%;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  .slider__item:nth-child(1) {
+    background-image: url("../img/before-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 216% 100%;
+    background-position: 5%;
+  }
+
+  .slider__item:nth-child(2) {
+    background-image: url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 216% 100%;
+    background-position: 91%;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .slider__box {
+    top: -191px;
+    left: 53px;
+  }
+
+  .slider__item:nth-child(1) {
+    background-size: 201% 100%;
+    background-position: 6%;
+    width: 59%;
+  }
+
+  .slider__item:nth-child(2) {
+    background-image: url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 239% 100%;
+    background-position: 91%;
+  }
+
+}

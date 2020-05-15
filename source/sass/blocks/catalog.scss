@@ -16,6 +16,7 @@
 
  .catalog__list {
    padding: 0;
+   margin: 0;
  }
 
 .catalog__item {
@@ -27,13 +28,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
+}
+
+.catalog__item--chicken-small-mobile,
+.catalog__item--chicken-big-mobile,
+.catalog__item--fish-small-mobile,
+.catalog__item--fish-big-mobile,
+.catalog__item--buckwheat-small-mobile,
+.catalog__item--buckwheat-big-mobile,
+.catalog__item--rice-small-mobile {
+  height: 142px;
 }
 
 .catalog__item--plus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.catalog__item--plus-mobile {
+  width: 30px;
+  opacity: 0.2;
+  padding-top: 27px;
+  padding-bottom: 19px;
 }
 
 .catalog__item--plus-image {
@@ -43,6 +61,8 @@
 
 .catalog__item--title {
   width: 74px;
+  margin-top: 22px;
+  margin-bottom: 11px;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
@@ -53,7 +73,9 @@
 }
 
 .catalog__item--plus-title {
-  width: 202px;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 8px;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
@@ -64,7 +86,8 @@
 }
 
 .catalog__item--plus-text {
-  width: 219px;
+  width: 100%;
+  padding-bottom: 21px;
   font-family: Arial;
   font-size: 12px;
   font-weight: 400;
@@ -74,7 +97,8 @@
 }
 
 .catalog__table {
-  width: 141px;
+  width: 142px;
+  border-collapse: collapse;
 }
 
 .catalog__field {
@@ -110,7 +134,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
   }
 
   .catalog__item {
@@ -127,6 +150,16 @@
     height: 267px;
     background-color: $grey-btn;
     padding: 164px 0 0;
+  }
+
+  .catalog__item--chicken-small-mobile,
+  .catalog__item--chicken-big-mobile,
+  .catalog__item--fish-small-mobile,
+  .catalog__item--fish-big-mobile,
+  .catalog__item--buckwheat-small-mobile,
+  .catalog__item--buckwheat-big-mobile,
+  .catalog__item--rice-small-mobile {
+    height: auto;
   }
 
   .catalog__item--title {
@@ -210,7 +243,7 @@
     width: 156px;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
+    padding-bottom: 0;
   }
 
   .catalog__item--plus-text {
@@ -218,6 +251,7 @@
     font-size: 16px;
     line-height: auto;
     margin-top: 29px;
+    padding: 0;
   }
 }
 

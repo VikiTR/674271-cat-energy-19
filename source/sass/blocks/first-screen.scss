@@ -102,7 +102,7 @@
   }
 
   .first-screen__functional {
-    padding-top: 109px;
+    padding-top: 73px;
     padding-left: 79px;
     padding-bottom: 41px;
   }
@@ -114,14 +114,14 @@
   .first-screen__image {
     position: absolute;
     left: 450px;
-    top: 30px;
+    top: -7px;
     z-index: 3;
     width: auto;
   }
 
   .first-screen__green-bg {
     position: absolute;
-    top: -114px;
+    top: -148px;
     right: -110px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     background-color: $green-btn;

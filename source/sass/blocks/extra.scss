@@ -3,9 +3,11 @@
 .extra {
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 28px;
 }
 
 .extra__title {
+  margin: 0;
   font-family: Oswald;
   font-size: 24px;
   font-weight: 400;
@@ -104,7 +106,6 @@
     position: relative;
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
     padding-bottom: 82px;
     padding-left: 37px;
 
