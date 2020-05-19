@@ -3,10 +3,12 @@
 .extra {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 36px;
   margin-top: 28px;
 }
 
 .extra__title {
+  position: relative;
   margin: 0;
   font-family: Oswald;
   font-size: 24px;
@@ -14,6 +16,21 @@
   line-height: 24px;
   text-align: left;
   color: $black-two;
+  background-color: $bg-white;
+  padding-right: 22px;
+  padding-bottom: 34px;
+  display: inline-flex;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    display: block;
+    width: 100vw;
+    height: 3px;
+    background-color: $green-btn;
+    z-index: -2;
+  }
 }
 
 .extra__wrapper {
@@ -22,8 +39,10 @@
 }
 
 .extra__list {
+  margin: 0;
   list-style: none;
   padding: 0;
+  padding-bottom: 39px;
   width: 100%;
 }
 
@@ -44,14 +63,14 @@
   text-transform: uppercase;
   color: $black-three;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .extra__item--texts {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 14px;
+  padding-bottom: 0;
 }
 
 .extra__item--text {
@@ -66,6 +85,7 @@
 .extra__gift {
   list-style: none;
   padding: 0;
+  margin: 0;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   width: 280px;
   height: 289px;
@@ -74,21 +94,21 @@
 .extra__item--gift {
   padding-top: 65px;
   padding-left: 113px;
-  padding-bottom: 64px;
+  padding-bottom: 59px;
   fill: $bg-white;
   width: 56px;
   height: 61px;
 }
 
 .extra__item--text-gift {
-  width: 159px;
+  width: 161px;
   font-family: Arial;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   color: $bg-white;
-  padding-left: 60px;
+  padding-left: 59px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -108,31 +128,35 @@
     line-height: 36px;
     padding-bottom: 82px;
     padding-left: 37px;
+    padding-right: 36px;
 
     &::before {
       content: "";
       position: absolute;
       top: 22px;
-      left: -30px;
-      width: 28px;
+      display: block;
+      width: 100vw;
       height: 3px;
       background-color: $green-btn;
+      z-index: -2;
     }
 
     &::after {
       content: "";
       position: absolute;
       top: 22px;
-      right: -29px;
-      width: 327px;
+      left: -30px;
+      display: block;
+      width: 100vw;
       height: 3px;
       background-color: $green-btn;
+      z-index: -2;
     }
   }
 
   .extra__list {
-    margin: 0;
     margin-bottom: 69px;
+    padding-bottom: 0;
   }
 
   .extra__item {
@@ -148,7 +172,7 @@
 
   .extra__item--title {
     padding-top: 25px;
-    width: 353px;
+    width: 352px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -168,7 +192,7 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 708px;
     height: 200px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .extra__item-gift {
@@ -177,16 +201,16 @@
   }
 
   .extra__item--gift {
-    padding-left: 90px;
+    padding-left: 91px;
   }
 
   .extra__item--text-gift {
-    width: 160px;
+    width: 161px;
     text-align: left;
     padding-left: 0;
     margin: 0;
     padding-top: 72px;
-    padding-right: 126px;
+    padding-right: 123px;
   }
 }
 
@@ -194,6 +218,7 @@
 
   .extra {
     margin-top: 66px;
+    padding-left: 40px;
   }
 
   .extra__wrapper {
@@ -201,18 +226,16 @@
   }
 
   .extra__title {
-    padding-left: 0;
+    padding-left: 19px;
     padding-bottom: 82px;
+    margin-left: -19px;
+  }
 
-    &::before {
-      left: -107px;
-      width: 69px;
-    }
-
-    &::after {
-      right: -106px;
-      width: 952px;
-    }
+  .extra__title::after {
+    top: 22px;
+    left: -91px;
+    display: block;
+    width: 71px;
   }
 
   .extra__wrapper {
@@ -255,6 +278,7 @@
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
     width: 245px;
     height: 289px;
+    margin-left: 79px;
   }
 
   .extra__item-gift {

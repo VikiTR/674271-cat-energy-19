@@ -42,15 +42,37 @@
 
 @media screen and (min-width: $tablet-width) {
 
+  .form__comment {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .form__title {
     font-size: 60px;
     line-height: 60px;
     border-top: none;
+    padding-top: 56px;
+    padding-bottom: 55px;
+    padding-left: 0;
+  }
+
+  .form__box {
+    padding-left: 41px;
   }
 
   .form__comment-text {
+    width: 608px;
+    min-height: 160px;
+    padding-top: 11px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  .form__more {
+    padding-top: 38px;
+    padding-left: 40px;
+    padding-bottom: 72px;
   }
 }
 
@@ -64,7 +86,7 @@
 
   .form__box {
     display: flex;
-    padding-bottom: 44px;
+    padding-left: 0;
   }
 
   .form__survey {
@@ -72,7 +94,7 @@
   }
 
   .form__answer {
-    width: 50%;
+    width: 570px;
     padding-top: 6px;
   }
 

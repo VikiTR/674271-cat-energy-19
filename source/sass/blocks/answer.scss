@@ -15,6 +15,14 @@
   text-align: left;
   text-transform: uppercase;
   color: $black-three;
+
+  &:focus  {
+    color: rgba(34, 34, 34, 0.3);
+  }
+
+  &:active  {
+    color: rgba(34, 34, 34, 0.3);
+  }
 }
 
 .answer-list {
@@ -44,6 +52,18 @@
   cursor: pointer;
 }
 
+.answer-list__item input:hover + label::before {
+  border: 1px solid $radio-hvr;
+}
+
+.answer-list__item input:focus + label::before {
+  opacity: 0.3;
+}
+
+.answer-list__item input:active + label::before {
+  opacity: 0.3;
+}
+
 .answer-list__item input + label::after {
   content: "";
   position: absolute;
@@ -57,6 +77,15 @@
   opacity: 0;
 }
 
+.answer-list__item input[type="radio"]:focus + label::after {
+  opacity: 0.3;
+}
+
+.answer-list__item input[type="radio"]:active + label::after {
+  opacity: 0.3;
+}
+
+
 .answer-list__item input:checked + label::after {
   opacity: 1;
 }
@@ -66,11 +95,16 @@
   .answer__wrapper {
     padding-left: 35px;
     padding-top: 34px;
+    margin-right: 37px;
   }
 
   .answer-text {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .answer-list__item label {
+    padding-left: 52px;
   }
 
   .answer-list__item input + label::before {
@@ -89,7 +123,7 @@
 
   .answer-list__item {
     padding-bottom: 31px;
-}
+  }
 
 }
 

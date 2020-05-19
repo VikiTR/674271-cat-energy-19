@@ -7,7 +7,7 @@
 }
 
 .more__item {
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .more__item label {
@@ -21,13 +21,6 @@
 .more__checkbox:focus + label {
   opacity: 0.3;
 }
-
-/*
-.more__checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}*/
 
 .more__checkbox + label {
   display: inline-flex;
@@ -59,6 +52,11 @@
   background-size: 50% 50%;
 }
 
+.more__checkbox:hover + label::before {
+  border: 1px solid $radio-hvr;
+}
+
+
 .more__checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -79,10 +77,12 @@
   line-height: 1.14;
   text-align: center;
   color: $input-act;
+  padding-top: 18px;
 }
 
 .more__bottom {
   text-align: center;
+  padding-top: 16px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -94,9 +94,53 @@
 
   .more__checkbox + label::before {
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 38px;
     margin-right: 14px;
+  }
+
+  .more__checkbox:checked + label::after {
+    left: 9px;
+  }
+
+  .more__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .more__list {
+    display: flex;
+  }
+
+  .more__item {
+    padding-bottom: 49px;
+  }
+
+  .more__item--sugar {
+    padding-right: 125px;
+  }
+
+  .more__item--milk {
+    padding-right: 219px;
+  }
+
+  .more__item label {
+    padding-left: 58px;
+  }
+
+  .more__bottom {
+    display: flex;
+    text-align: left;
+    padding-top: 13px;
+  }
+
+  .more__text {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    padding-top: 12px;
   }
 }
 

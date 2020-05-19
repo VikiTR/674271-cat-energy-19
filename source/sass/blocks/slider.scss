@@ -2,16 +2,35 @@
 
 .slider {
   position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 326px;
+  padding-bottom: 34px;
+}
+
+.slider__item--slim {
+  display: none;
+}
+
+.slider__box {
+  position: absolute;
+  width: 319px;
+  top: 35px;
+  left: -19px;
+
 }
 
 @media screen and (min-width: $tablet-width) {
+  .slider {
+    height: 384px;
+  }
 
   .slider__box {
     position: absolute;
-    top: -170px;
-    left: 66px;
+    top: -169px;
+    left: 11px;
     margin: 0 auto;
-    width: 636px;
+    width: 724px;
     display: flex;
   }
 
@@ -21,18 +40,17 @@
     overflow: hidden;
   }
 
-  .slider__item:nth-child(1) {
-    background-image: url("../img/before-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 216% 100%;
-    background-position: 5%;
+  .slider__item--pro {
+    width: 46.5%;
   }
 
-  .slider__item:nth-child(2) {
-    background-image: url("../img/after-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 216% 100%;
-    background-position: 91%;
+  .slider__item--slim {
+    display: block;
+  }
+
+  .slider__item-before-mobile {
+    max-width: 683px;
+    height: 517px;
   }
 
 }

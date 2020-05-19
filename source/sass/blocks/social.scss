@@ -15,16 +15,61 @@
 .social__link--vkontakte {
   width: 22px;
   height: 12px;
+  fill: $soc-btn;
+
+  &:hover {
+    fill: $green-btn;
+  }
+
+  &:focus {
+    fill: $green-btn;
+    fill-opacity: 0.3;
+  }
+
+  &:active {
+    fill: $green-btn;
+    fill-opacity: 0.3;
+  }
 }
 
 .social__link--instagram {
-  width: 23px;
-  height: 23px;
+  width: 17px;
+  height: 17px;
+  fill: $soc-btn;
+
+  &:hover {
+    fill: $green-btn;
+  }
+
+  &:focus {
+    fill: $green-btn;
+    fill-opacity: 0.3;
+  }
+
+  &:active {
+    fill: $green-btn;
+    fill-opacity: 0.3;
+  }
 }
 
 .social__link--facebook {
   width: 10px;
   height: 19px;
+  fill: $soc-btn;
+
+  &:hover {
+    fill: $green-btn;
+  }
+
+  &:focus {
+    fill: $green-btn;
+    fill-opacity: 0.3;
+  }
+
+  &:active {
+    fill: $green-btn;
+    fill-opacity: 0.3;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
