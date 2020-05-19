@@ -11,10 +11,14 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 13px;
 }
 
 .advantages__list {
   padding: 0;
+  margin-bottom: 23px;
   width: 273px;
 }
 
@@ -76,6 +80,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  padding-top: 3px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -85,7 +90,6 @@
   }
 
   .advantages__title {
-    margin: 0;
     padding-top: 45px;
     padding-bottom: 72px;
     font-size: 60px;
@@ -98,6 +102,7 @@
     flex-wrap: wrap;
     width: 690px;
     margin-top: 0;
+    margin-bottom: 0;
     counter-reset: list 0;
   }
 
@@ -180,7 +185,8 @@
 @media screen and (min-width: $desktop-width) {
 
   .advantages {
-    margin-bottom: 37px;
+    margin-bottom: 27px;
+    padding-left: 41px;
   }
 
   .advantages__list {

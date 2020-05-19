@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 28px;
-
+  padding-top: 30px;
  }
 
 .copyright__link {
@@ -20,6 +20,7 @@
 .copyright__logo-htmlacademy {
   width: 27px;
   height: 34px;
+  
   &:hover {
     fill: $green-btn;
   }
@@ -29,19 +30,23 @@
 @media screen and (min-width: $tablet-width) {
 
   .copyright {
-    padding-top: 58px;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .copyright__logo-htmlacademy {
-    padding-left: 23px;
+    padding-left: 24px;
   }
 
   .copyright__link {
-    padding-top: 9px;
+    padding-top: 0;
   }
 
 }
 
 @media screen and (min-width: $desktop-width) {
-
+  .copyright {
+    justify-content: flex-end;
+  }
 }

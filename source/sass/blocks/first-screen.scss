@@ -2,15 +2,13 @@
 
 .first-screen {
   background-color: $bg-white;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  width: 320px;
-  height: auto;
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+  width: 100vw;
+  background-size: cover;
+  height: 305px;
   text-align: center;
-}
-
-.first-screen__index-can-tablet,
-.first-screen__index-can-desktop {
-  display: none;
+  margin: 0 auto;
+  margin-bottom: 198px;
 }
 
 .first-screen__bg-mobile {
@@ -25,7 +23,7 @@
   font-weight: 400;
   line-height: 36px;
   padding-top: 29px;
-  padding-bottom: 19px;
+  padding-bottom: 23px;
 }
 
 .first-screen__cat-can {
@@ -38,6 +36,13 @@
   padding-bottom: 29px;
 }
 
+.first-screen__image {
+  margin: 0;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media screen and (min-width: $tablet-width) {
 
   .first-screen {
@@ -47,6 +52,7 @@
     background-color: $bg-white;
     background: $bg-white;
     text-align: left;
+    margin-bottom: -3px;
   }
 
   .first-screen__index-can-tablet {
@@ -77,22 +83,38 @@
     line-height: 1;
     text-transform: uppercase;
   }
+
+  .first-screen__image {
+    height: auto;
+    width: 709px;
+    padding: 0;
+
+  }
+
+  .first-screen__index-can-mobile {
+    z-index: 1;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
 
   .first-screen {
     position: relative;
+    padding-bottom: 115px;
+    margin-top: -150px;
     display: flex;
     height: 582px;
+    background: linear-gradient(to left, $green-btn 50%, $bg-white 50%);
   }
 
   .first-screen__text {
     padding: 0;
+    padding-left: 40px;
+    padding-top: 150px;
   }
 
   .first-screen__functional {
-    padding-top: 109px;
+    padding-top: 73px;
     padding-left: 79px;
     padding-bottom: 41px;
   }
@@ -103,15 +125,18 @@
 
   .first-screen__image {
     position: absolute;
-    left: 450px;
-    top: 30px;
+    left: 546px;
+    top: 143px;
     z-index: 3;
+    width: auto;
+
   }
+
 
   .first-screen__green-bg {
     position: absolute;
-    top: -114px;
-    right: -110px;
+    top: 0;
+    right: 112px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     background-color: $green-btn;
     width: 720px;

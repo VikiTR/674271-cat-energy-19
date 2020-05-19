@@ -6,12 +6,15 @@
   font-family: "Oswald";
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__green {
   background-color: $green-btn;
   font-size: 14px;
   line-height: 18px;
+  height: 40px;
+  width: 280px;
 
   &:hover {
     background-color: $green-hover;
@@ -27,6 +30,17 @@
   background-color: $green-btn;
   font-size: 16px;
   line-height: 20px;
+  width: 280px;
+  height: 40px;
+
+  &--form {
+    padding: 0;
+    background-color: $green-btn;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    height: 40px;
+  }
 
   &:hover {
     background-color: $green-hover;
@@ -39,10 +53,13 @@
 }
 
 .button__green-catalog--extra {
+  height: 40px;
   background-color: $green-btn;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 17px;
+  width: 100%;
+  margin-top: 15px;
 
   &:hover {
     background-color: $green-hover;
@@ -52,43 +69,126 @@
     background-color: $green-hover;
     color: $color-btn;
   }
+
+  &:active{
+    background-color: $green-hover;
+    color: $color-btn;
+  }
 }
 
 .button__grey-button {
+  width: 280px;
+  height: 40px;
+  margin-bottom: 24px;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
   background-color: $grey-btn;
   color: $input-act;
+
+  &:hover {
+    background-color: $layer-1;
+  }
+
+  &:focus {
+    background-color: $layer-1;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active{
+    background-color: $layer-1;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.button__green-catalog--form {
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:focus {
+    background-color: $green-hover;
+    color: $color-btn;
+  }
+
+  &:active{
+    background-color: $green-hover;
+    color: $color-btn;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
 
   .button__green {
     position: absolute;
-    top: 33%;
-    left: 12.5%;
-    padding-top: 14px;
-    padding-bottom: 17px;
-    padding-left: 26px;
-    padding-right: 29px;
+    top: 32.8%;
+    left: 25.8%;
+    width: 245px;
+    height: 52px;
     font-size: 20px;
     line-height: 20px;
   }
 
+  .button__green-catalog {
+    width: 249px;
+    height: 40px;
+    padding: 0;
+    margin-top: -10px;
+  }
+
   .button__green-catalog--extra {
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 40px;
+    margin-top: 11px;
+    margin-bottom: 29px;
+  }
 
+  .button__green-catalog--form {
+    height: 52px;
+    width: 283px;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 63px;
+  }
+
+  .button__grey-button {
+    width: 249px;
+    margin-top: 89px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
 
   .button__green {
-    top: 59%;
-    left: 6.5%;
+    top: 65.5%;
+    left: 18%;
+  }
+
+  .button__green-catalog {
+    width: 169px;
   }
 
   .button__green-catalog--extra {
     width: 245px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+
+  .button__grey-button {
+    width: 169px;
+  }
+
+  .button__green-catalog--form {
+    width: 568px;
+    margin-right: 84px;
   }
 }

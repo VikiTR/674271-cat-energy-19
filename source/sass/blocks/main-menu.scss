@@ -54,7 +54,6 @@
   }
 }
 
-
 .main-menu__list {
   display: flex;
   flex-wrap: wrap;
@@ -70,9 +69,6 @@
   }
 
   .main-menu--opened .main-menu__wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
     z-index: 10;
     min-height: 20vh;
     background-color: $bg-white;
@@ -93,7 +89,7 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  
+
   .main-menu {
     width: 439px;
     margin: 0;

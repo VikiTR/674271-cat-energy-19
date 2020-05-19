@@ -12,8 +12,8 @@
   line-height: 60px;
   text-align: left;
   color: $black-two;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 17px;
+  padding-bottom: 23px;
   margin: 0;
 }
 
@@ -39,7 +39,7 @@
   border: 1px solid $input-bg;
   border-radius: 3px;
   width: 124px;
-  height: 56px;
+  height: 52px;
   text-align: center;
 }
 
@@ -51,13 +51,13 @@
   text-align: center;
   color: $black-two;
   text-transform: uppercase;
-  padding-top: 17px;
+  padding-top: 12px;
 }
 
 .life-example__text {
   position: absolute;
   left: 32px;
-  top: 50px;
+  top: 44px;
   background-color: $grey-btn;
   width: 54px;
   font-family: Arial;
@@ -68,8 +68,25 @@
   color: $input-act;
 }
 
+.life-example__price {
+  display: flex;
+}
+
 .life-example__expenses {
-  padding-top: 38px;
+  padding-top: 34px;
+  padding-left: 46px;
+  padding-right: 3px;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $black-two;
+  text-transform: uppercase;
+}
+
+.life-example__sale {
+  padding-top: 35px;
   font-family: Oswald;
   font-size: 14px;
   font-weight: 400;
@@ -80,13 +97,15 @@
 }
 
 .life-example__scale {
+  position: relative;
   text-align: center;
+  display: flex;
+  padding-left: 44px;
 }
 
 .life-example__scale--before,
 .life-example__scale--after {
   border: none;
-  border-bottom: dashed 1px $border-bottom;
   padding: 0;
   font-family: Oswald;
   font-size: 16px;
@@ -95,24 +114,35 @@
   text-align: right;
   text-transform: uppercase;
   color: $black-two;
+  background-color: $grey-btn;
   cursor: pointer;
-
-  &:hover {
-    border-bottom: solid 1px $border-bottom;
-  }
-
-  &:focus {
-    border-bottom: solid 1px $grey-btn;
-  }
-
 }
 
-.life-example__index-can-tablet {
-  display: none;
+.life-example__scale--before {
+  padding-right: 120px;
 }
 
-.life-example__index-can-desktop {
-  display: none;
+.life-example__bar::before {
+  position: absolute;
+  top: 3px;
+  left: 98px;
+  content: "";
+  width: 82px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.life-example__bar::after {
+  position: absolute;
+  left: 105px;
+  top: 7px;
+  content: "";
+  width: 35px;
+  height: 6px;
+  background-color: $green-btn;
+  border-radius: 3px;
 }
 
 
@@ -122,8 +152,14 @@
   .life-example {
     position: relative;
     padding: 0;
-    margin: 0 auto;
-    min-width: 768px;
+    padding-bottom: 45px;
+    width: 100vw;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .life-example__title-wrapper {
+    width: 100vw;
+    background-color: $bg-white;
   }
 
   .life-example__title {
@@ -134,9 +170,14 @@
     letter-spacing: normal;
     text-align: left;
     background-color: $bg-white;
-    padding-top: 0;
-    padding-left: 30px;
-    padding-bottom: 75px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 0;
+    margin-left: -6px;
+  }
+
+  .life-exaple__superwrapper {
+    background-color: $bg-white;
   }
 
   .life-example__wrapper {
@@ -149,11 +190,11 @@
   }
 
   .life-example__description {
-    width: 674px;
+    width: 676px;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 69px;
-    padding-top: 71px;
+    padding-bottom: 53px;
+    padding-top: 61px;
   }
 
   .life-example__quantities {
@@ -161,6 +202,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 187px;
   }
 
   .life-example__quantity {
@@ -185,11 +227,12 @@
 
   .life-example__price {
   padding-right: 30px;
+  padding-top: 11px;
   }
 
   .life-example__expenses {
     padding-top: 0;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
@@ -206,49 +249,122 @@
   }
 
   .life-example__slider {
-    background-color: $grey-btn;
+    display: flex;
+    align-items: flex-end;
     width: 100%;
-    height: 310px;
+    height: 462px;
+    background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
   }
 
   .life-example__scale {
     position: relative;
+    padding-left: 61px;
+    padding-bottom: 0;
+    display: flex;
+  }
+
+  .life-example__scale--before,
+  .life-example__scale--after {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    border: none;
+  }
+
+  .life-example__scale--before {
+    padding-right: 24px;
+    background-color: $grey-btn;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 0px;
+      width: 45px;
+      height: 2px;
+      background-color: $border-bottom;
+      opacity: 0.23;
+
+      &:hover {
+        background-color: $border-bottom;
+        opacity: 0.4;
+      }
+
+      &:focus {
+        opacity: 0;
+      }
+    }
+  }
+
+  .life-example__scale--after {
+    background-color: $grey-bckgr;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 0px;
+      width: 50px;
+      height: 2px;
+      background-color: $border-bottom;
+      opacity: 0.23;
+
+      &:hover {
+        background-color: $border-bottom;
+        opacity: 0.4;
+      }
+
+      &:focus {
+        opacity: 0;
+      }
+    }
   }
 
   .life-example__bar {
     width: 428px;
     height: 6px;
+    margin-top: 7px;
+    margin-right: 20px;
     border-radius: 2.5px;
     background-color: $toggle;
   }
 
+  .life-example__bar::before,
+  .life-example__bar::after {
+    display: none;
+  }
+
   .life-example__toggle {
     position: absolute;
-    top: 31px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    box-shadow: 0px 2px 5px 0 #00000026;
+    top: -4px;
+    left: 331px;
+    width: 32px;
+    height: 32px;
     background-color: $bg-white;
-    border: 13px solid $bg-white;
-    background-color: $green-btn;
+    border: solid 1px $input-bg;
     border-radius: 50%;
+    box-shadow: 0px 2px 5px 0 $dark-grey;
     cursor: pointer;
-  }
 
-  .life-example__index-can-mobile {
-    display: none;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $green-btn;
+      border-radius: 50%;
+    }
 
-  .life-example__index-can-desktop {
-    display: none;
-  }
+    &:hover {
+      box-shadow: 0px 3px 5px 0 $dark-grey-hv;
+    }
 
-  .life-example__index-can-tablet {
-    display: block;
-    position: absolute;
-    top: 461px;
-    left: 8%;
+    &:active {
+      box-shadow: 0px 4px 5px 0 $dark-grey-fc;
+      border: solid 2px $green-btn;
+    }
   }
 }
 
@@ -256,6 +372,12 @@
 
   .life-example {
     position: relative;
+    width: 100vw;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .life-example__title-wrapper {
+    width: 100vw;
     background-color: $bg-white;
   }
 
@@ -265,13 +387,15 @@
   }
 
   .life-example__wrapper {
+    width: 973px;
     background-color: $grey-btn;
     padding-left: 110px;
-    padding-bottom: 73px;
+    padding-bottom: 64px;
   }
 
   .life-example__title {
-    padding-left: 110px;
+    padding-left: 38px;
+    padding-bottom: 75px;
   }
 
   .life-example__description {
@@ -281,8 +405,8 @@
   }
 
   .life-example__quantities {
-    width: 368px;
-    padding-bottom: 60px;
+    width: 366px;
+    padding-bottom: 48px;
   }
 
   .life-example__expenses {
@@ -306,6 +430,7 @@
 
   .life-example__scale {
     position: relative;
+    padding-left: 112px;
   }
 
   .life-example__bar {
@@ -316,34 +441,7 @@
   }
 
   .life-example__toggle {
-    position: absolute;
-    top: 31px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    box-shadow: 0px 2px 5px 0 #00000026;
-    background-color: $bg-white;
-    border: 13px solid $bg-white;
-    background-color: $green-btn;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  .life-example__index-can-mobile {
-    display: none;
-  }
-
-  .life-example__index-can-tablet {
-    display: none;
-  }
-
-  .life-example__index-can-desktop {
-    display: block;
-    position: absolute;
-    width: 636px;
-    height: 517px;
-    top: -54px;
-    left: 694px;
+    left: 381px;
   }
 
 

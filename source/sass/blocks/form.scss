@@ -1,0 +1,117 @@
+/*Форма*/
+
+.form__title {
+  margin: 0;
+  padding: 15px 20px 24px 20px;
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: $black-two;
+  border-top: 1px solid $border-clr;
+}
+
+.form__comment {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__comment-text {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.13;
+  text-align: left;
+  color: $input-act;
+  text-transform: uppercase;
+  width: 262px;
+  min-height: 134px;
+  resize: none;
+  overflow: auto;
+  padding-top: 13px;
+  padding-left: 14px;
+}
+
+.form__more {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .form__comment {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    border-top: none;
+    padding-top: 56px;
+    padding-bottom: 55px;
+    padding-left: 0;
+  }
+
+  .form__box {
+    padding-left: 41px;
+  }
+
+  .form__comment-text {
+    width: 608px;
+    min-height: 160px;
+    padding-top: 11px;
+    padding-left: 19px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .form__more {
+    padding-top: 38px;
+    padding-left: 40px;
+    padding-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .form__title{
+    margin-top: 38px;
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .form__box {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .form__survey {
+    width: 50%;
+  }
+
+  .form__answer {
+    width: 570px;
+    padding-top: 6px;
+  }
+
+  .form__comment {
+    padding: 0;
+  }
+
+  .form__comment-text {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 19px;
+    width: 1200px;
+    min-height: 162px;
+  }
+
+  .form__more {
+    padding-top: 37px;
+    padding-left: 0;
+  }
+}
