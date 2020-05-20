@@ -22,7 +22,8 @@
 
 @media screen and (min-width: $tablet-width) {
   .slider {
-    height: 384px;
+    height: 462px;
+    padding-bottom: 0;
   }
 
   .slider__box {
@@ -35,6 +36,7 @@
   }
 
   .slider__item {
+
     width: 50%;
     height: 517px;
     overflow: hidden;
@@ -49,6 +51,11 @@
   }
 
   .slider__item-before-mobile {
+    max-width: 683px;
+    height: 517px;
+  }
+
+  .slider__item-after-mobile {
     max-width: 683px;
     height: 517px;
   }
