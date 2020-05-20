@@ -122,18 +122,18 @@
 }
 
 
- .categories__right-arrow-long {
-   width: 25px;
-   height: 12px;
+.categories__right-arrow-long {
+  width: 25px;
+  height: 12px;
 
-   &:hover {
-     width: 34px;
-   }
+  &:hover {
+    width: 34px;
+  }
 
-   &:focus {
-     fill-opacity: 0.3;
-   }
- }
+  &:focus {
+    fill-opacity: 0.3;
+  }
+}
 
 @media screen and (min-width: $tablet-width) {
 
@@ -161,7 +161,7 @@
     margin-bottom: 29px;
   }
 
- .categories__item--cat-image {
+  .categories__item--cat-image {
     position: relative;
     width: 200px;
     height: 200px;
@@ -342,5 +342,3 @@
     margin-left: -120px;
   }
 }
-
-

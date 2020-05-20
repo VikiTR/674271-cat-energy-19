@@ -1,13 +1,13 @@
 /* Блок Копирайт */
 
- .copyright {
+.copyright {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 28px;
   padding-top: 30px;
- }
+}
 
 .copyright__link {
   color: $input-act;
@@ -20,11 +20,10 @@
 .copyright__logo-htmlacademy {
   width: 27px;
   height: 34px;
-  
+
   &:hover {
     fill: $green-btn;
   }
-
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -42,7 +41,6 @@
   .copyright__link {
     padding-top: 0;
   }
-
 }
 
 @media screen and (min-width: $desktop-width) {
