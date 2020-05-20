@@ -129,8 +129,8 @@
   content: "";
   width: 82px;
   height: 12px;
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
+  background-color: $bg-white;
+  border: 1px solid $input-bg;
   border-radius: 6px;
 }
 
@@ -382,7 +382,18 @@
   .life-example {
     position: relative;
     width: 100vw;
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
+
+    /*
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 462px;
+      background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
+    }*/
   }
 
   .life-example__title-wrapper {
@@ -398,8 +409,8 @@
   .life-example__wrapper {
     width: 973px;
     background-color: $grey-btn;
-    padding-left: 110px;
-    padding-bottom: 64px;
+    padding-left: 0;
+    padding-bottom: 0;
   }
 
   .life-example__title {
