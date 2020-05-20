@@ -14,10 +14,10 @@
   border-bottom: 1px solid $layer-1;
 }
 
- .catalog__list {
-   padding: 0;
-   margin: 0;
- }
+.catalog__list {
+  padding: 0;
+  margin: 0;
+}
 
 .catalog__item {
   list-style: none;
@@ -109,6 +109,7 @@
   text-align: left;
   color: $input-act;
 }
+
 .catalog__value {
   font-family: Arial;
   font-size: 12px;
@@ -117,7 +118,6 @@
   text-align: right;
   color: $input-act;
 }
-
 
 @media screen and (min-width: $tablet-width) {
 
@@ -279,5 +279,4 @@
   .catalog__item--table {
     width: 169px;
   }
-
 }

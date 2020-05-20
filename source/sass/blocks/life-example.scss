@@ -152,9 +152,18 @@
   .life-example {
     position: relative;
     padding: 0;
-    padding-bottom: 45px;
     width: 100vw;
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background-color: $bg-white;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 462px;
+      background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
+    }
   }
 
   .life-example__title-wrapper {
@@ -259,7 +268,7 @@
   .life-example__scale {
     position: relative;
     padding-left: 61px;
-    padding-bottom: 0;
+    padding-bottom: 76px;
     display: flex;
   }
 
