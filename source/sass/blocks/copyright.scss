@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 28px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .copyright__link {
@@ -15,14 +15,25 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  padding-top: 12px;
 }
 
 .copyright__logo-htmlacademy {
-  width: 27px;
-  height: 34px;
+  width: 42px;
+  height: auto;
+  margin-right: -8px;
+  fill: $soc-btn;
 
   &:hover {
     fill: $green-btn;
+  }
+
+  &:focus {
+    fill-opacity: 0.3;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
   }
 }
 
@@ -31,20 +42,36 @@
   .copyright {
     padding: 0;
     justify-content: flex-end;
-    align-items: center;
   }
 
   .copyright__logo-htmlacademy {
-    padding-left: 24px;
+    padding-left: 15px;
+    padding-right: 30px;
   }
 
   .copyright__link {
-    padding-top: 0;
+    padding-top: 11px;
+
+    &:hover {
+      color: $input-act;
+    }
+
+    &:focus {
+      color:#4444444c;
+    }
+
+    &:active {
+     color: #4444444c;
+    }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .copyright {
     justify-content: flex-end;
+  }
+
+  .copyright__logo-htmlacademy {
+    padding-right: 0;
   }
 }

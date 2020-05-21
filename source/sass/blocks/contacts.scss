@@ -2,11 +2,11 @@
 
 .contacts {
   width: 100vw;
-  background-color: $bg-white;
+  background-color: $grey-btn;
 }
 
 .contacts__wrapper {
-  background-color: $bg-white;
+  background-color: $grey-btn;
   display: flex;
   justify-content: space-between;
   padding-top: 29px;
@@ -66,11 +66,11 @@
 @media screen and (min-width: $tablet-width) {
 
   .contacts {
-    background-color: $bg-white;
+    background-color: $grey-btn;
   }
 
   .contacts__wrapper {
-    background-color: $bg-white;
+    background-color: $grey-btn;
     padding-top: 64px;
     padding-bottom: 59px;
     max-width: 768px;
@@ -99,7 +99,7 @@
     text-align: left;
     text-transform: uppercase;
     color: $black-two;
-    padding-left: 64px;
+    padding-left: 65px;
   }
 
   .contacts__address {
@@ -116,7 +116,7 @@
 
   .contacts__map-pin {
     position: absolute;
-    left: 44.5%;
+    left: 41.3%;
     top: 145px;
     z-index: 4;
     width: 113px;
@@ -145,7 +145,7 @@
     width: 570px;
     z-index: 1;
     top: 95px;
-    left: 223px;
+    left: 205px;
     padding-top: 64px;
     background-color: $bg-white;
   }
@@ -156,7 +156,7 @@
   }
 
   .contacts__map-pin {
-    left: 66.6%;
+    left: 69.7%;
     top: 150px;
   }
 }

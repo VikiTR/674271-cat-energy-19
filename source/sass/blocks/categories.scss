@@ -130,8 +130,9 @@
     width: 34px;
   }
 
-  &:focus {
-    fill-opacity: 0.3;
+  &:active {
+    width: 34px;
+    opacity: 0.3;
   }
 }
 

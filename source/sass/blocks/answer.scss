@@ -129,8 +129,22 @@
 
 @media screen and (min-width: $desktop-width) {
 
+  .answer__wrapper {
+    padding-top: 37px;
+  }
+
   .answer-list__item label {
     padding-left: 52px;
+  }
+
+  .answer-list__item input + label::before {
+    left: -10px;
+    top: calc(50% - (42px / 2));
+  }
+
+  .answer-list__item input + label::after {
+    left: 1px;
+    top: calc(50% - (20px / 2));
   }
 
 }

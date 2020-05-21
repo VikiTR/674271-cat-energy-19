@@ -22,7 +22,7 @@
 
   display: flex;
   justify-content: center;
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 28px;
   border-bottom: 1px solid $layer-1;
 }
@@ -55,7 +55,7 @@
     max-width: 768px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 52px 30px 60px;
+    padding: 48px 30px 60px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -68,11 +68,16 @@
     align-items: center;
   }
 
+  .footer__logotype a {
+    padding-left: 33px;
+  }
+
   .footer__social {
+    display: flex;
+    justify-content: center;
     width: 33%;
     padding: 0;
     border: none;
-    align-items: center;
   }
 
   .footer__copyright {
@@ -92,6 +97,10 @@
   .footer__wrapper {
     max-width: 1220px;
     margin: 0 auto;
-    padding-top: 58px;
+    padding-top: 54px;
+  }
+
+  .footer__logotype a {
+    padding-left: 0;
   }
 }

@@ -31,6 +31,7 @@
   overflow: auto;
   padding-top: 13px;
   padding-left: 14px;
+  padding-bottom: 0;
 }
 
 .form__more {
@@ -78,6 +79,11 @@
 
 @media screen and (min-width: $desktop-width) {
 
+  .form {
+    padding-left: 41px;
+  }
+
+
   .form__title{
     margin-top: 38px;
     margin-bottom: 56px;
@@ -94,7 +100,7 @@
   }
 
   .form__answer {
-    width: 570px;
+    width: calc(50% - 5px);
     padding-top: 6px;
   }
 
@@ -104,6 +110,7 @@
 
   .form__comment-text {
     margin-top: 5px;
+    margin-left: 40px;
     padding-top: 10px;
     padding-left: 19px;
     width: 1200px;
@@ -111,7 +118,7 @@
   }
 
   .form__more {
-    padding-top: 37px;
+    padding-top: 0;
     padding-left: 0;
   }
 }

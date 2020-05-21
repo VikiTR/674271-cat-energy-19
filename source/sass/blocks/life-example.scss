@@ -29,6 +29,7 @@
 }
 
 .life-example__quantities {
+  width: 282px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -191,11 +192,12 @@
 
   .life-example__wrapper {
     background-color: $bg-white;
-    padding-left: 30px;
+    padding-left: 0;
     padding-bottom: 255px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: -6px;
   }
 
   .life-example__description {
@@ -211,7 +213,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 187px;
+    padding-bottom: 0;
   }
 
   .life-example__quantity {
@@ -235,16 +237,22 @@
   }
 
   .life-example__price {
-  padding-right: 30px;
+  padding-right: 8px;
   padding-top: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 174px;
   }
 
   .life-example__expenses {
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    white-space: nowrap;
   }
 
   .life-example__sale {
@@ -255,6 +263,9 @@
     text-align: right;
     text-transform: uppercase;
     color: $black-two;
+    padding-top: 0;
+    white-space: nowrap;
+    padding-left: 85px;
   }
 
   .life-example__slider {
@@ -262,13 +273,13 @@
     align-items: flex-end;
     width: 100%;
     height: 462px;
-    background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
+    background: linear-gradient(to right, $grey-btn 49%, $grey-bckgr 50%);
   }
 
   .life-example__scale {
     position: relative;
-    padding-left: 61px;
-    padding-bottom: 76px;
+    padding-left: 63px;
+    padding-bottom: 69px;
     display: flex;
   }
 
@@ -281,9 +292,24 @@
   }
 
   .life-example__scale--before {
-    padding-right: 24px;
+    margin-right: 24px;
+    padding-right: 0;
+    padding-bottom: 6px;
     background-color: $grey-btn;
+    border-bottom: 1px dotted $radio-hvr;
 
+    &:hover {
+      border-bottom: 1px solid $border-bottom;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $grey-btn;
+    }
+
+    &:active {
+      border-bottom: 1px solid $grey-btn;
+    }
+    /*
     &::after {
       content: "";
       position: absolute;
@@ -302,12 +328,26 @@
       &:focus {
         opacity: 0;
       }
-    }
+    }*/
   }
 
   .life-example__scale--after {
     background-color: $grey-bckgr;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted $radio-hvr;
 
+    &:hover {
+      border-bottom: 1px solid $border-bottom;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $grey-bckgr;
+    }
+
+    &:active {
+      border-bottom: 1px solid $grey-bckgr;
+    }
+    /*
     &::after {
       content: "";
       position: absolute;
@@ -326,7 +366,7 @@
       &:focus {
         opacity: 0;
       }
-    }
+    }*/
   }
 
   .life-example__bar {
@@ -345,8 +385,8 @@
 
   .life-example__toggle {
     position: absolute;
-    top: -4px;
-    left: 331px;
+    top: -6px;
+    left: 330px;
     width: 32px;
     height: 32px;
     background-color: $bg-white;
@@ -371,8 +411,9 @@
     }
 
     &:active {
-      box-shadow: 0px 4px 5px 0 $dark-grey-fc;
-      border: solid 2px $green-btn;
+      box-shadow: 0px 4px 5px 0 $dark-grey-fc,
+                  0px 0px 0px 2px $green-btn;
+      /*border: solid 2px $green-btn;*/
     }
   }
 }
@@ -411,6 +452,8 @@
     background-color: $grey-btn;
     padding-left: 0;
     padding-bottom: 0;
+    margin-right: 109px;
+    margin-left: 0;
   }
 
   .life-example__title {
@@ -420,18 +463,24 @@
 
   .life-example__description {
     width: 431px;
-    padding-bottom: 69px;
+    padding-bottom: 5px;
     padding-top: 71px;
+    padding-left: 33px
   }
 
   .life-example__quantities {
-    width: 366px;
-    padding-bottom: 48px;
+    width: 400px;
+    padding-bottom: 0;
+  }
+
+  .life-example__quantity:first-child {
+    margin-left: 32px;
   }
 
   .life-example__expenses {
     padding-top: 0;
     padding-right: 64px;
+    padding-left: 32px;
     text-align: left;
   }
 
@@ -440,17 +489,28 @@
   }
 
   .life-example__price {
+    width: 400px;
     display: flex;
+    padding-bottom: 14px;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .life-example__sale {
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .life-example__slider {
     background-color: $grey-btn;
     width: 100%;
+    background: linear-gradient(to right, #f2f2f2 51%, #eaeaea 50%);
   }
 
   .life-example__scale {
     position: relative;
-    padding-left: 112px;
+    padding-bottom: 68px;
+    padding-left: 61px;
   }
 
   .life-example__bar {
@@ -461,8 +521,9 @@
   }
 
   .life-example__toggle {
-    left: 381px;
-  }
+    left: 331px;
+    top: -6px;
+   }
 
 
 }

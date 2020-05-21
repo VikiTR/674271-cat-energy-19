@@ -79,6 +79,10 @@
     border: 1px solid $input-inv;
     box-shadow: 0 0 0 1px $input-inv;
   }
+
+  .survey__input-text--size input {
+    width: 171px;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -135,5 +139,16 @@
 
   .survey__list {
     padding-right: 40px;
+    padding-bottom: 62px;
   }
+
+  .survey__item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .survey__input-text {
+    padding-top: 13px;
+  }
+
 }

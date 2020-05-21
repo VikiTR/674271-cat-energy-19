@@ -5,66 +5,6 @@
   padding-right: 20px;
 }
 
-.form-contact__title {
-  position: relative;
-  font-family: Oswald;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: $black-two;
-  margin: 0;
-  padding-top: 28px;
-  padding-bottom: 31px;
-  background-color: $bg-white;
-  display: inline-flex;
-}
-
-.form-contact__title--data {
-  width: 202px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 43px;
-    height: 3px;
-    width: 100vw;
-    background-color: $green-btn;
-    z-index: -1;
-  }
-}
-
-.form-contact__title--comment {
-  width: 143px;
-  padding-bottom: 35px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 43px;
-    height: 3px;
-    width: 100vw;
-    background-color: $green-btn;
-    z-index: -1;
-  }
-}
-
-.form-contact__title--more {
-  width: 164px;
-  padding-top: 25px;
-  padding-bottom: 41px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 38px;
-    height: 3px;
-    width: 100vw;
-    background-color: $green-btn;
-    z-index: -1;
-  }
-}
-
 .form-contact__list {
   list-style: none;
   padding-left: 0;
@@ -72,6 +12,7 @@
 }
 
 .form-contact__item {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -128,79 +69,57 @@
   opacity: 0.5;
 }
 
+.form-contact__input-text--email {
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  width: 18px;
+  fill: $black-three;
+
+  &:hover {
+    fill: $black-three;
+  }
+
+  &:active {
+    fill: $green-btn;
+  }
+
+  &:invalid {
+    fill: $input-inv;
+  }
+}
+
+.form-contact__input-text--tel {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+  width: 18px;
+  fill: $black-three;
+
+  &:hover {
+    fill: $black-three;
+  }
+
+  &:active {
+    fill: $green-btn;
+  }
+
+  &:invalid {
+    fill: $input-inv;
+  }
+}
+
 
 @media screen and (min-width: $tablet-width) {
-
-  .form-contact__title {
-    font-size: 36px;
-    line-height: 36px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 21px;
-      left: 110px;
-      height: 3px;
-      width: 119px;
-      background-color: $green-btn;
-    }
-  }
-
-  .form-contact__title--data {
-    padding-top: 76px;
-    padding-bottom: 70px;
-    padding-left: 20px;
-    width: 553px;
-
-    &::before {
-      top: 98px;
-    }
-
-    &::after {
-      top: 98px;
-      left: -50px;
-      width: 30px;
-    }
-  }
-
-  .form-contact__title--comment {
-    padding-top: 62px;
-    width: 219px;
-    padding-bottom: 75px;
-
-    &::before {
-      top: 83px;
-    }
-
-    &::after {
-      top: 83px;
-      left: -70px;
-      width: 30px;
-    }
-  }
-
-  .form-contact__title--more {
-    width: 252px;
-    padding-top: 24px;
-    padding-bottom: 67px;
-
-    &::before {
-      top: 45px;
-    }
-
-    &::after {
-      top: 45px;
-      left: -70px;
-      width: 30px;
-    }
-  }
-
+ 
   .form-contact__list {
     padding-left: 20px;
     padding-right: 16px;
   }
+
   .form-contact__item:first-child {
-    padding-top: 4px;
+    padding-top: 6px;
+    padding-bottom: 20px;
   }
 
   .form-contact__label {
@@ -210,14 +129,26 @@
     text-align: left;
     color: $black-three;
     margin-top: -7px;
-    padding-right: 18px;
+    padding-right: 20px;
   }
 
   .form-contact__input-text {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    padding-top: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .form-contact__input-text--email {
+    top: 27px;
+    right: 19px;
+  }
+
+  .form-contact__input-text--tel {
+    position: absolute;
+    top: 19px;
+    right: 17px;
   }
 
 }
@@ -226,44 +157,37 @@
 
   .form-contact{
     padding: 0;
-  }
-
-  .form-contact__title {
-    padding-bottom: 69px;
-    padding-top: 0;
-  }
-
-  .form-contact__title--data {
-    padding-top: 0;
-    padding-left: 0;
-
-    &::before {
-    top: 21px;
-    left: -110px;
-    height: 3px;
-    width: 70px;
-    }
-
-    &::after {
-      top: 21px;
-      left: 553px;
-      height: 3px;
-      width: 100vw;
-    }
-  }
-
-  .form-contact__title--comment {
-
+    padding-left: 42px;
   }
 
   .form-contact__list {
     display: flex;
-    padding-bottom: 29px;
+    padding-bottom: 48px;
     padding-left: 0;
   }
 
   .form-contact__item {
-    width: 50%;
+    width: calc(50% - 53px);
+  }
+
+  .form-contact__item:first-child {
+    margin-right: 80px;
+    padding-bottom: 0;
+  }
+
+  .form-contact__input-text {
+    padding-left: 20px;
+  }
+
+  .form-contact__input-text--email {
+    top: 25px;
+    right: 19px;
+  }
+
+  .form-contact__input-text--tel {
+    position: absolute;
+    top: 24px;
+    right: 18px;
   }
 
 }
