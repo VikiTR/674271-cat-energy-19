@@ -1,7 +1,7 @@
 /* Каталог */
 
 .catalog__title {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -63,7 +63,7 @@
   width: 74px;
   margin-top: 22px;
   margin-bottom: 11px;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -76,7 +76,7 @@
   width: 100%;
   margin: 0;
   padding-bottom: 8px;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -88,7 +88,7 @@
 .catalog__item--plus-text {
   width: 100%;
   padding-bottom: 21px;
-  font-family: Arial;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -102,7 +102,7 @@
 }
 
 .catalog__field {
-  font-family: Arial;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
@@ -111,7 +111,7 @@
 }
 
 .catalog__value {
-  font-family: Arial;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
@@ -194,7 +194,7 @@
   }
 
   .catalog__field {
-    font-family: Arial;
+    font-family: "Arial", "Tahoma", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
@@ -207,7 +207,7 @@
   }
 
   .catalog__value {
-    font-family: Arial;
+    font-family: "Arial", "Tahoma", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;

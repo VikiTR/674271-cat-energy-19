@@ -26,7 +26,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -71,7 +71,7 @@
 }
 
 .more__text {
-  font-family: Arial;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
@@ -135,7 +135,7 @@
   }
 
   .more__text {
-    font-family: Arial;
+    font-family: "Arial", "Tahoma", sans-serifl;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
@@ -145,6 +145,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+
   .more {
     padding-bottom: 81px;
   }

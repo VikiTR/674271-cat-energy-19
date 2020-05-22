@@ -6,7 +6,6 @@
   width: 100vw;
   background-size: cover;
   height: 305px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 198px;
 }
@@ -16,9 +15,16 @@
   padding-bottom: 136px;
 }
 
+.first-screen__text {
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  margin-left: 12px;
+}
+
 .first-screen__functional {
   color: $bg-white;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -28,7 +34,7 @@
 
 .first-screen__cat-can {
   color: $bg-white;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -39,8 +45,13 @@
 .first-screen__image {
   margin: 0;
   overflow: hidden;
-  padding-left: 20px;
+  padding-left: 14px;
   padding-right: 20px;
+}
+
+.first-screen__index-can-mobile {
+  width: 280px;
+  height: 270px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -55,13 +66,17 @@
     margin-bottom: -3px;
   }
 
-  .first-screen__index-can-tablet {
+  .first-screen__index-can-mobile {
     width: 708px;
     height: 609px;
+    z-index: 1;
   }
 
   .first-screen__text {
     padding-left: 88px;
+    margin: 0;
+    text-align: left;
+    width: 420px;
   }
 
   .first-screen__functional {
@@ -69,7 +84,7 @@
     padding-top: 56px;
     padding-bottom: 41px;
     color: $black-two;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 1;
@@ -77,7 +92,7 @@
   .first-screen__cat-can {
     padding-bottom: 20px;
     color: $black-two;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
@@ -88,11 +103,6 @@
     height: auto;
     width: 709px;
     padding: 0;
-
-  }
-
-  .first-screen__index-can-mobile {
-    z-index: 1;
   }
 }
 
@@ -129,7 +139,12 @@
     top: 143px;
     z-index: 3;
     width: auto;
+  }
 
+  .first-screen__index-can-mobile {
+    width: 552px;
+    height: 499px;
+    z-index: 1;
   }
 
   .first-screen__green-bg {

@@ -3,7 +3,7 @@
   display: inline-block;
   border: none;
   color: $bg-white;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
@@ -130,6 +130,7 @@
     height: 52px;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 13px;
   }
 
   .button__green-catalog {
@@ -171,6 +172,7 @@
   .button__green {
     top: 78.5%;
     left: 12.3%;
+    margin: 0;
   }
 
   .button__green-catalog {

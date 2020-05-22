@@ -6,7 +6,7 @@
 }
 
 .life-example__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -14,7 +14,12 @@
   color: $black-two;
   padding-top: 17px;
   padding-bottom: 23px;
+  padding-left: 20px;
   margin: 0;
+}
+
+.life-example__wrapper {
+  padding-left: 20px;
 }
 
 .life-example__description {
@@ -39,13 +44,13 @@
   position: relative;
   border: 1px solid $input-bg;
   border-radius: 3px;
-  width: 124px;
+  width: 122px;
   height: 52px;
   text-align: center;
 }
 
 .life-example__number {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -57,10 +62,10 @@
 
 .life-example__text {
   position: absolute;
-  left: 32px;
+  left: 17px;
   top: 44px;
   background-color: $grey-btn;
-  width: 54px;
+  width: 87px;
   font-family: Arial;
   font-size: 12px;
   font-weight: 400;
@@ -77,7 +82,7 @@
   padding-top: 34px;
   padding-left: 46px;
   padding-right: 3px;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -108,7 +113,7 @@
 .life-example__scale--after {
   border: none;
   padding: 0;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -145,8 +150,6 @@
   background-color: $green-btn;
   border-radius: 3px;
 }
-
-
 
 @media screen and (min-width: $tablet-width) {
 
@@ -206,6 +209,7 @@
     line-height: 24px;
     padding-bottom: 53px;
     padding-top: 61px;
+    padding-left: 0;
   }
 
   .life-example__quantities {
@@ -256,7 +260,7 @@
   }
 
   .life-example__sale {
-    font-family: Oswald;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -309,26 +313,6 @@
     &:active {
       border-bottom: 1px solid $grey-btn;
     }
-    /*
-    &::after {
-      content: "";
-      position: absolute;
-      top: 25px;
-      left: 0px;
-      width: 45px;
-      height: 2px;
-      background-color: $border-bottom;
-      opacity: 0.23;
-
-      &:hover {
-        background-color: $border-bottom;
-        opacity: 0.4;
-      }
-
-      &:focus {
-        opacity: 0;
-      }
-    }*/
   }
 
   .life-example__scale--after {
@@ -347,26 +331,6 @@
     &:active {
       border-bottom: 1px solid $grey-bckgr;
     }
-    /*
-    &::after {
-      content: "";
-      position: absolute;
-      top: 25px;
-      left: 0px;
-      width: 50px;
-      height: 2px;
-      background-color: $border-bottom;
-      opacity: 0.23;
-
-      &:hover {
-        background-color: $border-bottom;
-        opacity: 0.4;
-      }
-
-      &:focus {
-        opacity: 0;
-      }
-    }*/
   }
 
   .life-example__bar {
@@ -413,7 +377,6 @@
     &:active {
       box-shadow: 0px 4px 5px 0 $dark-grey-fc,
                   0px 0px 0px 2px $green-btn;
-      /*border: solid 2px $green-btn;*/
     }
   }
 }
@@ -424,17 +387,6 @@
     position: relative;
     width: 100vw;
     background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
-
-    /*
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-      height: 462px;
-      background: linear-gradient(to right, $grey-btn 50%, $grey-bckgr 50%);
-    }*/
   }
 
   .life-example__title-wrapper {
@@ -523,7 +475,5 @@
   .life-example__toggle {
     left: 331px;
     top: -6px;
-   }
-
-
+  }
 }

@@ -7,7 +7,7 @@
 .main-menu__toggle {
   position: absolute;
   top: -24px;
-  right: 0;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 25px;
@@ -21,8 +21,8 @@
 .main-menu--closed .main-menu__toggle::after {
   content: "";
   position: absolute;
-  top: -18px;
-  right: 20px;
+  top: -17px;
+  right: 0;
   width: 24px;
   height: 2px;
   background-color: $black-three;
@@ -107,7 +107,6 @@
   .main-menu__toggle {
     display: none;
   }
-
 }
 
 @media screen and (min-width: $desktop-width) {

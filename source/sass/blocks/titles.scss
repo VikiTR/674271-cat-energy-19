@@ -19,7 +19,7 @@
 .titles__extra {
   position: relative;
   margin: 0;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -76,7 +76,7 @@
 
   .titles__extra {
     padding-left: 33px;
-    padding-bottom: 0; 
+    padding-bottom: 0;
    }
 
    .titles__contact-title {
@@ -88,5 +88,4 @@
     padding-top: 0;
     padding-left: 0;
   }
-
 }

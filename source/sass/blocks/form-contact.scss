@@ -22,7 +22,7 @@
 }
 
 .form-contact__label {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -35,7 +35,7 @@
 
 .form-contact__input-text {
   width: 100%;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -109,9 +109,8 @@
   }
 }
 
-
 @media screen and (min-width: $tablet-width) {
- 
+
   .form-contact__list {
     padding-left: 20px;
     padding-right: 16px;
@@ -150,7 +149,6 @@
     top: 19px;
     right: 17px;
   }
-
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -189,5 +187,4 @@
     top: 24px;
     right: 18px;
   }
-
 }

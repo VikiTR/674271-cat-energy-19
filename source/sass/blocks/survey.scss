@@ -6,7 +6,7 @@
 }
 
 .survey__text {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -50,7 +50,7 @@
 
 .survey__input-text {
   width: 100%;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -78,10 +78,6 @@
   &:invalid {
     border: 1px solid $input-inv;
     box-shadow: 0 0 0 1px $input-inv;
-  }
-
-  .survey__input-text--size input {
-    width: 171px;
   }
 }
 
@@ -150,5 +146,4 @@
   .survey__input-text {
     padding-top: 13px;
   }
-
 }
