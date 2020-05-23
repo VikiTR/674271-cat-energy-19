@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,6 @@
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
-
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
@@ -54,7 +53,7 @@
         <p class="survey__text">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
         <div class="form__box">
           <div class="form__survey survey">
-            <legend class="visually-hidden">Анкета</legend>
+            <h2 class="visually-hidden">Анкета</h2>
             <ul class="survey__list">
               <li class="survey__item">
                 <label class="survey__label" for="firstname">Имя:<sup>*</sup></label>
@@ -62,26 +61,26 @@
               </li>
               <li class="survey__item">
                 <label class="survey__label" for="name">Вес&nbsp;(кг):<sup>*</sup></label>
-                <input class="survey__input-text" type="text" name="name" placeholder="7">
+                <input class="survey__input-text" type="text" id="name" name="name" placeholder="7">
               </li>
               <li class="survey__item">
-                <label class="survey__label" for="name">Возраст&nbsp;(лет):</label>
-                <input class="survey__input-text" type="text" name="name" placeholder="7">
+                <label class="survey__label" for="age">Возраст&nbsp;(лет):</label>
+                <input class="survey__input-text" type="text" id="age" name="age" placeholder="7">
               </li>
             </ul>
           </div>
           <div class="form__answer answer">
-            <legend class="visually-hidden">Ответ</legend>
+            <h2 class="visually-hidden">Ответ</h2>
             <div class="answer__wrapper">
               <ul class="answer-list">
                 <li class="answer-list__item">
                   <input class="visually-hidden" type="radio" name="answer-slim" id="slim" checked=""><label for="slim" class="answer-text">Похудение</label>
                 </li>
                 <li class="answer-list__item">
-                  <input class="visually-hidden" type="radio" name="answer-big" id="big"><label for="big" class="answer-text">Набор массы</label>
+                  <input class="visually-hidden" type="radio" name="answer-slim" id="big"><label for="big" class="answer-text">Набор массы</label>
                 </li>
                 <li class="answer-list__item">
-                  <input class="visually-hidden" type="radio" name="answer-dont" id="dont"><label for="dont" class="answer-text">Не знаю (нужен ваш совет)</label>
+                  <input class="visually-hidden" type="radio" name="answer-slim" id="dont"><label for="dont" class="answer-text">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
@@ -118,7 +117,6 @@
           </li>
         </ul>
       </section>
-
     </div>
     <section class="titles-form titles-form--comment">
       <div class="container">
@@ -130,7 +128,6 @@
       <section class="form__comment">
         <textarea class="form__comment-text" id="text" name="text">Расскажите обо всех повадках кота</textarea>
       </section>
-
     </div>
     <section class="titles-form titles-form--more">
       <div class="container">
@@ -170,14 +167,16 @@
 
     </div>
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <div class="contacts__text">
-          приглашаем к&nbsp;сотрудничеству дилеров!
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            приглашаем к&nbsp;сотрудничеству дилеров!
+          </div>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8
+            <p class="contacts__address--spb">Санкт-Петербург</p>
+          </address>
         </div>
-        <address class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8
-          <p class="contacts__address--spb">Санкт-Петербург</p>
-        </address>
       </div>
       <div class="contacts__map">
         <div class="container">
@@ -268,22 +267,8 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector(".main-menu");
-    var navToggle = document.querySelector(".main-menu__toggle");
-
-    navMain.classList.remove("main-menu--nojs");
-
-    navToggle.addEventListener("click", function () {
-      if (navMain.classList.contains("main-menu--closed")) {
-        navMain.classList.remove("main-menu--closed");
-        navMain.classList.add("main-menu--opened");
-      } else {
-        navMain.classList.add("main-menu--closed");
-        navMain.classList.remove("main-menu--opened");
-      }
-    });
-  </script>
+  <script src="js/menu-script.js"></script>
+  <script src="js/svg4everebody.min.js"></script>
 </body>
 
 </html>

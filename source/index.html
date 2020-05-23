@@ -101,7 +101,7 @@
             <div class="categories__catalog">
               <a class="categories__catalog-slim" href="catalog.slim.html">Каталог slim</a>
               <a class="categories__right-arrow-long" href="catalog.slim.html">
-                <img src="img/icon-right-arrow-long.svg" alt="Стрелка">
+                <img src="img/right-arrow-long.svg" alt="Стрелка">
               </a>
             </div>
           </div>
@@ -143,7 +143,7 @@
             <div class="categories__catalog">
               <a class="categories__catalog-pro" href="catalog.pro.html">Каталог pro</a>
               <a class="categories__right-arrow-long" href="catalog.pro.html">
-                <img src="img/icon-right-arrow-long.svg" alt="Стрелка">
+                <img src="img/right-arrow-long.svg" alt="Стрелка">
               </a>
             </div>
           </div>
@@ -258,14 +258,16 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <div class="contacts__text">
-          приглашаем к&nbsp;сотрудничеству дилеров!
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            приглашаем к&nbsp;сотрудничеству дилеров!
+          </div>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8
+            <p class="contacts__address--spb">Санкт-Петербург</p>
+          </address>
         </div>
-        <address class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8
-          <p class="contacts__address--spb">Санкт-Петербург</p>
-        </address>
       </div>
       <div class="contacts__map">
         <div class="container">
@@ -371,22 +373,8 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector(".main-menu");
-    var navToggle = document.querySelector(".main-menu__toggle");
-
-    navMain.classList.remove("main-menu--nojs");
-
-    navToggle.addEventListener("click", function () {
-      if (navMain.classList.contains("main-menu--closed")) {
-        navMain.classList.remove("main-menu--closed");
-        navMain.classList.add("main-menu--opened");
-      } else {
-        navMain.classList.add("main-menu--closed");
-        navMain.classList.remove("main-menu--opened");
-      }
-    });
-  </script>
+  <script src="js/menu-script.js"></script>
+  <script src="js/svg4everebody.min.js"></script>
 </body>
 
 </html>

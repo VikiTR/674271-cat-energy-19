@@ -33,9 +33,12 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .titles {
-    margin-top: 63px;
+    margin-top: 65px;
+
+    &::before {
+      top: 23px;
+    }
   }
 
   .titles__extra {
@@ -73,13 +76,12 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .titles__extra {
     padding-left: 33px;
     padding-bottom: 0;
-   }
+  }
 
-   .titles__contact-title {
+  .titles__contact-title {
     padding-bottom: 69px;
     padding-top: 0;
   }
