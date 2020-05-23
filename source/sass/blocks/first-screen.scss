@@ -1,11 +1,7 @@
 /* Блок Функциональное питание для котов */
 
 .first-screen {
-  background: $bg-white url("../img/index-background-mobile@1x.jpg") no-repeat;
-  width: 100vw;
-  background-size: cover;
-  height: 305px;
-  margin: 0 auto;
+  background: $bg-white;
   margin-bottom: 198px;
 }
 
@@ -18,7 +14,6 @@
   text-align: center;
   width: 280px;
   margin: 0 auto;
-  margin-left: 12px;
 }
 
 .first-screen__functional {
@@ -44,13 +39,22 @@
 .first-screen__image {
   margin: 0;
   overflow: hidden;
-  padding-left: 14px;
-  padding-right: 20px;
 }
 
 .first-screen__index-can-mobile {
   width: 280px;
   height: 270px;
+}
+
+@media screen and (max-width: $mobile-width-only) {
+  .first-screen {
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+    width: 100vw;
+    background-size: cover;
+    height: 305px;
+    margin: 0 auto;
+    margin-bottom: 198px;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {

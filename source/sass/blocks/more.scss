@@ -18,7 +18,7 @@
   user-select: none;
 }
 
-.more__checkbox:focus + label {
+.more__checkbox:active + label {
   opacity: 0.3;
 }
 
@@ -63,7 +63,7 @@
   top: calc(50% - (17px / 2));
   width: 22px;
   height: 17px;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
