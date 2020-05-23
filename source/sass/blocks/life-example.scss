@@ -24,7 +24,7 @@
 
 .life-example__description {
   width: 266px;
-  font-family: Arial;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -66,7 +66,7 @@
   top: 44px;
   background-color: $grey-btn;
   width: 87px;
-  font-family: Arial;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -93,7 +93,7 @@
 
 .life-example__sale {
   padding-top: 35px;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -451,9 +451,8 @@
   }
 
   .life-example__slider {
-    background-color: $grey-btn;
     width: 100%;
-    background: linear-gradient(to right, #f2f2f2 51%, #eaeaea 50%);
+    background: linear-gradient(to right, $grey-btn 51%, $grey-bckgr 50%);
   }
 
   .life-example__scale {
