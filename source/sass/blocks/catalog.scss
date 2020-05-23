@@ -120,7 +120,6 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .catalog__title {
     border: none;
     font-size: 60px;
@@ -173,20 +172,20 @@
   .catalog__item-image {
     position: absolute;
     top: -46px;
-    left: 0px;
+    left: 0;
   }
 
   .catalog__item-image-big {
     top: -82px;
-    left: 0px;
+    left: 0;
   }
 
   .catalog__item-table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 159px;
-  width: 253px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 159px;
+    width: 253px;
   }
 
   .catalog__table-border {
@@ -256,7 +255,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .catalog__title {
     padding-top: 40px;
     padding-left: 40px;

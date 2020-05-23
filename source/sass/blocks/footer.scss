@@ -21,7 +21,6 @@
 }
 
 .footer__logotype {
-
   display: flex;
   justify-content: center;
   padding-top: 37px;
@@ -48,7 +47,6 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .footer {
     padding: 0;
   }
@@ -89,7 +87,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .footer {
     padding: 0 110px;
     margin-left: auto;

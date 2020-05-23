@@ -16,11 +16,11 @@
   text-transform: uppercase;
   color: $black-three;
 
-  &:focus  {
+  &:focus {
     color: rgba(34, 34, 34, 0.3);
   }
 
-  &:active  {
+  &:active {
     color: rgba(34, 34, 34, 0.3);
   }
 }
@@ -85,13 +85,11 @@
   opacity: 0.3;
 }
 
-
 .answer-list__item input:checked + label::after {
   opacity: 1;
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .answer__wrapper {
     padding-left: 35px;
     padding-top: 34px;
@@ -127,7 +125,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .answer__wrapper {
     padding-top: 37px;
   }

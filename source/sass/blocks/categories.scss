@@ -136,7 +136,6 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .categories {
     display: flex;
     flex: wrap;
@@ -244,7 +243,7 @@
       color: rgba(17, 17, 17, 0.3);
     }
 
-    &:active{
+    &:active {
       color: rgba(17, 17, 17, 0.3);
     }
   }
@@ -258,14 +257,13 @@
       color: rgba(17, 17, 17, 0.3);
     }
 
-    &:active{
+    &:active {
       color: rgba(17, 17, 17, 0.3);
     }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .categories {
     margin-top: 82px;
     margin-bottom: 28px;

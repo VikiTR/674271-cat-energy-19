@@ -110,7 +110,6 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .form-contact__list {
     padding-left: 20px;
     padding-right: 16px;
@@ -152,8 +151,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
-  .form-contact{
+  .form-contact {
     padding: 0;
     padding-left: 42px;
   }

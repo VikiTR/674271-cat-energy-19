@@ -49,7 +49,6 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .titles-form {
     position: relative;
     width: 100vw;
@@ -123,7 +122,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .titles-form--data {
     &::before {
       top: 21px;
@@ -149,7 +147,6 @@
   .titles-form__contact-title--comment {
     padding-top: 18px;
   }
-
 
   .titles-form--more {
     &::before {

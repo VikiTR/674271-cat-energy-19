@@ -70,7 +70,7 @@
     color: $color-btn;
   }
 
-  &:active{
+  &:active {
     background-color: $green-hover;
     color: $color-btn;
   }
@@ -97,14 +97,13 @@
     color: rgba(68, 68, 68, 0.3);
   }
 
-  &:active{
+  &:active {
     background-color: $layer-1;
     color: rgba(68, 68, 68, 0.3);
   }
 }
 
 .button__green-catalog--form {
-
   &:hover {
     background-color: $green-hover;
   }
@@ -114,14 +113,13 @@
     color: $color-btn;
   }
 
-  &:active{
+  &:active {
     background-color: $green-hover;
     color: $color-btn;
   }
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .button__green {
     position: absolute;
     top: 32.8%;
@@ -168,7 +166,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .button__green {
     top: 78.5%;
     left: 12.3%;
